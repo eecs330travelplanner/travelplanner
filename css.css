@@ -8,6 +8,14 @@ body {
 	color:#2c4251;
 }
 
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
 
 .header-bar {
 	background-color: #E8F1F2;
@@ -17,7 +25,7 @@ body {
 	font-size: 70px;	
 }
 
-.header{
+header{
 	font-family: 'Montserrat', sans-serif;
 	color:#272838;
 	font-size: 30px;	
