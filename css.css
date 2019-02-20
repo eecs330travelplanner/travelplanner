@@ -3,19 +3,23 @@
 					*/
 
 body {
-	background-color: #E8F1F2; /* */
+	background-color: #E8F1F2; 
 	font-family: 'Raleway', sans-serif;
 	color:#2c4251;
 }
 
 button {
-    background-color: Transparent;
+    
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    border-radius: 3px;
+}
 
+.button-nextpage{
+    background-color: #2C4251;
 }
 
 .header-bar {
