@@ -1,1 +1,151 @@
+body {
+	background-color: #E8F1F2;
+	font-family: 'Raleway', sans-serif;
+	color:#2c4251;
+}
 
+.header-bar {
+	background-color: #E8F1F2;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color:#272838;
+	font-size: 90px;
+}
+
+.selector-header {
+	width:90%;
+	height:100px;
+	margin:5%;
+	display: block;
+}
+
+.selector-goToBoard {
+	float:right;
+	width:300px;
+	height:100%;
+	text-align:center;
+	font-size:35px;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 6px;
+}
+
+.selector-weather {
+	float:left;
+	width:60%;
+	height:120%;
+	
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+	.card {
+		display: inline-block;
+	}
+
+	&::-webkit-scrollbar {
+    	display: none;
+	}
+}
+
+.selector-weather-day {
+	width:100px;
+	height:90%;
+	border:1px solid black;
+	display:inline-block;
+	border-radius: 6px;
+}
+
+.selector-weather-day-date {
+	width:100%;
+	text-align:center;
+	height:30%;
+}
+
+.selector-weather-day-forecast {
+	width:100%;
+	text-align:center;
+	height:70%;
+}
+
+.forecast-icon {
+	font-size:50px;
+}
+
+.selector-info {
+	margin-left: 32.5%;
+	margin-top:-80px;
+	display:block;
+	width:35%;
+	height:100%;
+	text-align: center;
+}
+
+.selector-info-location {
+	float:left;
+	font-size:30px;
+}
+
+.selector-info-numDays {
+	float:right;
+	font-size:30px;
+}
+
+.selector-imgWrapper {
+	position:relative;
+	display:inline-block;
+	width:95%;
+}
+
+.selector-imgBlock {
+	position: relative;
+	display: inline-block;
+	margin:20px;
+}
+
+.selector-imgButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    z-index:1;
+}
+
+.fav-button {
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+.fav-icon {
+	color:#A0EADE;
+	font-size: 50px;
+}
+
+
+#selector-img1 {
+	width:300px;
+}
+#selector-img2 {
+	width:250px;
+}
+#selector-img3 {
+	width:450px;
+}
+#selector-img4 {
+	width:260px;
+}
+#selector-img5 {
+	width:450px;
+}
+#selector-img6 {
+	width:500px;
+}
+#selector-img7 {
+	width:300px;
+}
+#selector-img8 {
+	width:420px;
+}
