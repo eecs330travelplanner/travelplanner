@@ -65,8 +65,8 @@ hr {
 	}
 
 	&::-webkit-scrollbar {
-    	display: none;
-	}
+		display: none;
+    }
 }
 
 .selector-weather-day {
