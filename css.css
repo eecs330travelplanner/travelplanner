@@ -194,6 +194,7 @@ input[type=checkbox]{
 }
 
 .selector-GoToBoard {
+	float:right;
 	width:25%;
 	height:100%;
 	text-align:center;
