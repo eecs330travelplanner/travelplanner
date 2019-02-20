@@ -3,32 +3,82 @@
   <title>Home Page</title>
   <link rel="stylesheet" type="text/css" href="css.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+
+  <style>
+  button {
+      background-color: #2c4251;
+      background-repeat:no-repeat;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: solid;
+      cursor:pointer;
+      overflow: hidden;
+
+      text-align: center;
+      font-size: 30px;
+      border-radius: 12px;
+      text-decoration-color: white;
+  }
+
+  .futureTrips{
+    display: inline-block;
+    border: solid;
+  }
+
+  .tripTitle{
+    margin-left: 10px;
+  }
+
+  .tripWrapper{
+    margin-left: 150px;
+  }
+
+  .cardWrapper{
+    display: inline-block;
+  }
+
+  .tripCard{
+    width: 300px;
+    height: 300px;
+  }
+
+
+  </style>
+
 </head>
 
 <body>
+  <div class="header-bar">
+  	<p class="header-logo">ADVENTUM</p>
+  </div>
+
   <div class = "planNewTrip">
     <!--Plan New Trip Button-->
-    <a href="PlanNewTrip.html">PLAN MY NEW TRIP!</a>
+    <button><a href="PlanNewTrip.html">PLAN MY NEW TRIP!</a></button>
   </div>
 
   <div class = "futureTrips">
-    <h1>Future Trips</h1>
+    <h1 class = "tripTitle">Future Trips</h1>
+
     <div class = "tripWrapper">
-      <img src="images/Mumbai.jpg">
-    </div>
-    <div class = "tripWrapper">
-      <img src="images/Mumbai.jpg">
+      <div class = "cardWrapper">
+        <img class = "tripCard" src="images/Mumbai.jpg">
+      </div>
+
+      <div class = "cardWrapper">
+        <img class = "tripCard" src="images/Cabo.jpg">
+      </div>
     </div>
   </div>
 
   <div class = "pastTrips">
-    <h1>Past Trips</h1>
-    <div class = "tripWrapper">
-      <img src="images/Mumbai.jpg">
+    <h1 class = "tripTitle">Past Trips</h1>
+    <div class = "cardWrapper">
+      <img class = "tripCard" src="images/Mumbai.jpg">
     </div>
 
-    <div class = "tripWrapper">
-      <img src="images/Mumbai.jpg">
+    <div class = "cardWrapper">
+      <img class = "tripCard" src="images/Mumbai.jpg">
     </div>
   </div>
 
