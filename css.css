@@ -60,6 +60,7 @@ a {
 }
 
 .button_transparent{
+	font-size: 15px;
 	background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -73,15 +74,13 @@ a {
 	padding-left:60px;
 }
 
-.subtitle{
-	padding-top: 40px;
-	text-align: center;
-}
 .activities{
 	display:none;
 }
 
 .checkboxes {
+	padding-top:20px;
+	font-size:19px;
 	margin-left:70px;
 	height:100%;
 	width: 20%;
@@ -92,15 +91,9 @@ a {
 
 
 #suggestions{
-	margin-top:10px;
-	height:200px;
+	height:130px;
 	display:inline-block;
 	width:79%;
-}
-
-.begin_planning{
-	margin-top:50px;
-	width:100%;
 }
 
 
