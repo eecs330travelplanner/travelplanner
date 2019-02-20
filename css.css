@@ -270,6 +270,7 @@ input[type=checkbox]{
 	border:1px solid black;
 	display:inline-block;
 	border-radius: 6px;
+	z-index: -1;
 }
 
 .selector-weather-day-date {
