@@ -21,3 +21,7 @@ function buildBoard(wrap) {
 	var stored = JSON.parse(sessionStorage.getItem("favPics"));
 	console.log(stored);
 }
+
+function suggestions(){
+	document.getElementsByClassName("activities")[0].style.display = "inline";
+}
