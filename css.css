@@ -1,7 +1,16 @@
+
+/*
+	Global and header
+*/
+
 body {
 	background-color: #E8F1F2;
 	font-family: 'Raleway', sans-serif;
 	color:#2c4251;
+}
+
+hr {
+	border:1px solid #272838;
 }
 
 .header-bar {
@@ -10,9 +19,16 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color:#272838;
 	font-size: 90px;
+	height:110px;
 }
 
+/*
+	Selector Page
+*/
+
 .selector-header {
+	position:relative;
+	top:25px;
 	width:90%;
 	height:100px;
 	margin:5%;
