@@ -6,10 +6,15 @@ body {
 	background-color: #E8F1F2;
 	font-family: 'Raleway', sans-serif;
 	color:#2c4251;
+	text-align: center;
 }
 
 hr {
 	border:1px solid #2c4251;
+}
+
+a {
+	text-decoration: none;
 }
 
 .header-bar {
@@ -26,17 +31,53 @@ hr {
 	color:#2c4251;
 }
 
-/* Plan New Trip Page
+/*
+	Home Page
 */
-body {
-	text-align:center;
-}
 
-a {
-	text-decoration: none;
-}
+  .home-GoToPlanNew{
+    text-decoration: none;
+    font-size:30px;
+    font-family: 'Raleway';
+	width:300px;
+    height:80px;
+    color:#E8F1F2;
+    background-color: #2C4251;
+    border-radius: 6px;
+    float:right;
+  }
+  .home-button-wrap {
+    width:100%;
+    display:block;
+    height:100px;
+  }
 
-.everything {
+  .trips{
+    display: inline-block;
+    float:left;
+  }
+
+  .tripTitle{
+    float:left;
+    margin-left: 60px;
+    width:300px;
+    display:inline-block;
+    line-height: 300px;
+  }
+
+  .tripCard{
+    width: 300px;
+    height: 300px;
+    float:left;
+    display:inline-block;
+    margin:30px;
+  }
+
+/* 
+	Plan New Trip Page
+*/
+
+.newTrip-everything {
 	width:100%;
 	text-align: center;
 }
@@ -70,9 +111,9 @@ a {
   font-weight: normal;
   font-family:"Raleway";
 }
-.form{
+.form
+{
 	line-height: 30px;
-
 }
 
 .button_transparent{
