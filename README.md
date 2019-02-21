@@ -1,6 +1,6 @@
 # Adventum Travel Planner
 
-Abby Pratt
+Abby Pratt\n
 Andrew Vagliano
 Ava Robinson
 Pravika Joshi
