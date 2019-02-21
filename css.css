@@ -71,6 +71,7 @@ a {
     float:left;
     display:inline-block;
     margin:30px;
+    border-radius: 6px;
   }
 
 /* 
