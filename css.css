@@ -1,1 +1,398 @@
+/*
+	Global and header
+*/
 
+body {
+	background-color: #E8F1F2;
+	font-family: 'Raleway', sans-serif;
+	color:#2c4251;
+	text-align: center;
+}
+
+hr {
+	border:1px solid #2c4251;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-bar {
+	background-color: #E8F1F2;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 90px;
+	height:110px;
+	text-decoration: none;
+}
+
+.header-link {
+	text-decoration: none;
+	color:#2c4251;
+}
+
+/*
+	Home Page
+*/
+
+  .home-GoToPlanNew{
+    text-decoration: none;
+    font-size:30px;
+    font-family: 'Raleway';
+	width:300px;
+    height:80px;
+    color:#E8F1F2;
+    background-color: #2C4251;
+    border-radius: 6px;
+    float:right;
+  }
+  .home-button-wrap {
+    width:100%;
+    display:block;
+    height:100px;
+  }
+
+  .trips{
+    display: inline-block;
+    float:left;
+  }
+
+  .tripTitle{
+    float:left;
+    margin-left: 60px;
+    width:300px;
+    display:inline-block;
+    line-height: 300px;
+  }
+
+  .tripCard{
+    width: 300px;
+    height: 300px;
+    float:left;
+    display:inline-block;
+    margin:30px;
+    border-radius: 6px;
+  }
+
+/* 
+	Plan New Trip Page
+*/
+
+.newTrip-everything {
+	width:100%;
+	text-align: center;
+}
+.drop-input{
+  width: 220px;
+  margin-left: 10px;
+  padding-left: 5px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  padding-top:40px;
+
+}
+#entry{
+	font-color: black;
+	font-size:20px;
+}
+.text-input {
+  margin-left:18px;
+  text-align:left;	
+  padding-left:5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 220px;
+  font-size:20px;
+  padding-top:40px;
+  font-weight: normal;
+  font-family:"Raleway";
+}
+.form
+{
+	line-height: 30px;
+}
+
+.button_transparent{
+	font-size: 20px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-bottom: 40px;
+}
+
+#button_align{
+	vertical-align: middle;
+}
+
+.activities{
+	display:none;
+}
+
+.checkboxes {
+	padding-top:20px;
+	font-size:29px;
+	margin-left:70px;
+	height:100%;
+	width: 20%;
+	display:inline-block;
+
+}
+.notification{
+	margin-bottom: 40px;
+}
+
+input[type=checkbox]{
+	-webkit-transform: scale(2);
+}
+.checkboxtext
+{
+  font-size: 110%;
+  display: inline;
+  padding-left: 10px;
+}
+
+#suggestions{
+	height:130px;
+	display:inline-block;
+	width:79%;
+}
+.input-header{
+	font-size:29px;
+	display:inline-block;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.plan-goToSelector{
+	width: 300px;
+	height: 10%;
+	text-align: center;
+	font-size: 35px;
+	color: #e8f1f2;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family:"Raleway";
+}
+.suggestions_button{
+	box-shadow: 3px 6px;
+	float:center;
+	margin-top:50px;
+	margin-left:70px;
+	background-color: #c1dbe3;
+	text-align:center;
+	width:25%;
+	height:4%;
+	color:#2c4251;
+	border-radius:6px;
+	padding-top:6px;
+}
+
+.button_text{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-size: 28px;
+	text-align:center;
+	vertical-align: middle;
+}
+
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.datetext{
+	margin-left:18px;
+}
+.dates{
+	vertical-align: middle;
+	display:inline-block;
+	text-align: left;
+	font-size:12px;
+}
+
+/*
+	Selector Page
+*/
+
+.selector-header {
+	position:relative;
+	top:25px;
+	width:90%;
+	height:100px;
+	margin-left:5%;
+	display:block;
+}
+
+.selector-GoToBoard {
+	float:right;
+	width:25%;
+	height:100%;
+	text-align:center;
+	font-size:35px;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+}
+
+.selector-weather {
+	float:left;
+	width:40%;
+	height:120%;
+	
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+	.card {
+		display: inline-block;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+    }
+}
+
+.selector-weather-day {
+	width:100px;
+	height:90%;
+	border:1px solid black;
+	display:inline-block;
+	border-radius: 6px;
+	z-index: -1;
+}
+
+.selector-weather-day-date {
+	width:100%;
+	text-align:center;
+	height:30%;
+}
+
+.selector-weather-day-forecast {
+	width:100%;
+	text-align:center;
+	height:70%;
+}
+
+.forecast-icon {
+	font-size:50px;
+}
+
+.selector-info {
+	float:left;
+	display:inline-block;
+	width:35%;
+	height:100%;
+	line-height: 90px;
+	text-align: center;
+	font-size:40px;
+}
+
+.imgWrapper {
+	position:relative;
+	top:30px;
+	display:inline-block;
+	width:95%;
+	text-align: center;
+}
+
+.selector-imgBlock {
+	position: relative;
+	display: inline-block;
+	margin:20px;
+}
+
+.selector-imgButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    z-index:1;
+}
+
+.fav-button {
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+.fav-icon {
+	color:#A0EADE;
+	font-size: 50px;
+}
+
+#selector-img1 {
+	width:300px;
+}
+#selector-img2 {
+	width:250px;
+}
+#selector-img3 {
+	width:450px;
+}
+#selector-img4 {
+	width:260px;
+}
+#selector-img5 {
+	width:450px;
+}
+#selector-img6 {
+	width:500px;
+}
+#selector-img7 {
+	width:300px;
+}
+#selector-img8 {
+	width:420px;
+}
+
+/*
+	Trip Board
+*/
+
+.tripboard-header {
+	position:relative;
+	top:25px;
+	width:90%;
+	height:100px;
+	margin-left:5%;
+	display: block;
+}
+
+.tripboard-goToHome {
+	float:right;
+	width:300px;
+	height:100%;
+	text-align:center;
+	font-size:35px;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+}
+
+.tripboard-goToSelect {
+	float:left;
+	width:300px;
+	height:100%;
+	text-align:center;
+	font-size:35px;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+}

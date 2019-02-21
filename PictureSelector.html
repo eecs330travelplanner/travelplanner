@@ -1,80 +1,117 @@
 <html>
 <header>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<style>
-
-body {
-	background-color: #E8F1F2; /* */
-	font-family: 'Raleway', sans-serif;
-	color:#2c4251;
-}
-
-button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-
-.header-bar {
-	background-color: #E8F1F2;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	color:#272838;
-	font-size: 90px;
-}
-
-.selector-header {
-	width:95%;
-}
-
-</style>
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+	<link href="css.css" type="text/css" rel="stylesheet">
 </header>
 <body>
+
+<script src="javascript.js"></script>
+
 <div class="header-bar">
-	<p class="header-logo">ADVENTUM</p>
+	<a href="HomePage.html" class="header-link"><p class="header-logo">ADVENTUM</p></a>
 </div>
+
+<hr>
 
 <div class="selector-header">
 	<div class="selector-weather">
+		<div class="selector-weather-day">
 
+			<div class="selector-weather-day-date">
+				Aug 8
+			</div>
+			<div class="selector-weather-day-forecast">
+				<i class="material-icons forecast-icon">brightness_low</i>
+			</div>
+		</div>
+		<div class="selector-weather-day">
+			<div class="selector-weather-day-date">
+				Aug 9
+			</div>
+			<div class="selector-weather-day-forecast">
+				<i class="material-icons forecast-icon">brightness_low</i>
+			</div>
+		</div>
+		<div class="selector-weather-day">
+			<div class="selector-weather-day-date">
+				Aug 10
+			</div>
+			<div class="selector-weather-day-forecast">
+				<i class="material-icons forecast-icon">brightness_low</i>
+			</div>
+		</div>
+		<div class="selector-weather-day">
+			<div class="selector-weather-day-date">
+				Aug 11
+			</div>
+			<div class="selector-weather-day-forecast">
+				<i class="material-icons forecast-icon">cloud</i>
+			</div>
+		</div>
+		<div class="selector-weather-day">
+			<div class="selector-weather-day-date">
+				Aug 12
+			</div>
+			<div class="selector-weather-day-forecast">
+				<i class="material-icons forecast-icon">brightness_low</i>
+			</div>
+		</div>
 	</div>
-	<div class="selector-info">
-
-	</div>
-	<button class="selector-goToBoard">
-		View Board
-	</button>
+	<div class="selector-info">Rome, Italy : 5 Days</div>
+	<a href="TripBoard.html"><button class="selector-GoToBoard">View Board ></button></a>
 </div>
 
-<div class="selector-imgWrapper">
+<div class="imgWrapper">
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome1.jpg" id="selector-img1">
+		<div class="fav-button">
+			<button class="selector-imgButton">
+				<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+			</button>
+		</div>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome2.jpg" id="selector-img2">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+			</button>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome3.png" id="selector-img3">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+		</button>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome4.jpg" id="selector-img4">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+		</button>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome5.jpg" id="selector-img5">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+		</button>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome6.jpg" id="selector-img6">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+		</button>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome7.jpg" id="selector-img7">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+		</button>
 	</div>
 	<div class="selector-imgBlock">
-		<button class="selector-imgButton"><i class="material-icons">favorite_border</i></button>
+		<img src="images/Rome8.jpg" id="selector-img8">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite_border</i>
+		</button>
 	</div>
 </div>
 
