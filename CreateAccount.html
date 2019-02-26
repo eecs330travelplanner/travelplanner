@@ -14,8 +14,16 @@
         color: white
       }
 
+      .create-account-form{
+        padding-top: 20px;
+      }
+
       .name-fields{
         display: inline-block;
+        width: auto;
+      }
+      .first-name-field{
+        width: 50%
       }
     </style>
 
@@ -25,23 +33,32 @@
     <div class="header-bar">
       <p class="header-logo">ADVENTUM</p>
     </div>
+
     <hr>
 
     <div class = "create-account-box">
-      <div class = "name-fields">
-        <div class "first-name-field"><p>First Name</p></div>
-        <div class "last-name-field"><p>Last Name</p></div>
-      </div>
-      <div class = "email-field">
-        <p>Email</p>
-      </div>
-      <div class = "password-field">
-        <p> password </p>
-      </div>
+      <form class = "create-account-form">
+        <div class = "name-fields">
+          <div class "first-name-field">
+            First Name: <input type="text" name="FirstName">
+          </div>
+          <div class "last-name-field">
+            Last Name: <input type="text" name="LastName">
+          </div>
+        </div>
 
+        <div class = "email-field">
+          Email: <input type="text" name="email">
+        </div>
 
+        <div class = "password-field">
+          Password: <input type="text" name="Password">
+        </div>
+      </form>
+      <br>
+      <br>
 
-
+      <p> Log into your instrgram account for even better planning. <p
     </div>
 
   </body>
