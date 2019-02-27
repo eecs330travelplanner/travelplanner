@@ -76,6 +76,25 @@ a {
 }
 
 /*
+	Create Account
+*/
+
+.create-goBackToLogin {
+	display: inline-block;
+	width:150px;
+	height:60px;
+	color:#E8F1F2;
+	font-size:20px;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+	margin-bottom:100px;
+	float:left;
+	margin:10px;
+
+}
+
+/*
 	Home Page
 */
 
