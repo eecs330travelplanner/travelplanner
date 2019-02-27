@@ -1,25 +1,33 @@
 <html>
 <head>
-	
-	<link rel="stylesheet" type="text/css" href="css.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
 </head>
 <body>
-	<div class="header-bar">
-		<a href="HomePage2.html" class="header-link">
-			<p class="header-logo">ADVENTUM</p>
-		</a>
-	</div>
-	
-	<hr>
-	<div class="newTrip-everything">
-	<form class="form" action="/action_page.php">
-	
-	<div class="input-header">Where? </div>
-	<input list="country" name="country" class="drop-input" placeholder="Country" id="entry"/>
-    	<datalist id="country">
+
+<div class="header-bar">
+    <div class="header-logo">
+        <a href="HomePage2.html" class="header-logo-link">ADVENTUM</a>
+    </div>
+    <div class="header-profile">
+        <img class="header-profile-pic" src="images/blank-profile.png" onclick="displayProfile(this)">
+        <div class="header-profile-menu">
+            <p class="header-profile-menu-name">Ava Robinson</p>
+            <a href="LogIn2.html"><p class="header-profile-menu-logOut">Log Out</p></a>
+        </div>
+    </div>
+</div>
+    
+    <hr>
+    <div class="newTrip-everything">
+    <form class="form" action="/action_page.php">
+    
+    <div class="input-header">Where? </div>
+    <input list="country" name="country" class="drop-input" placeholder="Country" id="entry"/>
+        <datalist id="country">
         <option value="Afghanistan" />
         <option value="Albania" />
         <option value="Algeria" />
@@ -259,61 +267,65 @@
         <option value="Yemen" />
         <option value="Zambia" />
         <option value="Zimbabwe" />
-    	</datalist>
-
-	<input list="city" name="city" class="drop-input" placeholder="City" id="entry"/>
-        <datalist id="city">
-        <option value="" />
-        <option value="Arlington" />
-        <option value="Boston" />
-        <option value="Chicago" />
-        <option value="Denver" />
-        <option value="Georgetown" />
-        <option value="Halfax" />
-        <option value="New York City" />
-        <option value="Pittsburg" />        
-        <option value="San Diego" />
-        <option value="Sacramento" />
-        <option value="Trenton" />
-        <option value="Washington, D.C." />
         </datalist>
 
-	<br> 
-	
+    <input list="city" name="city" class="drop-input" placeholder="City" id="entry"/>
+        <datalist id="city">
+        <option value="Bari" />
+        <option value="Bologna" />
+        <option value="Catania" />
+        <option value="Florence" />
+        <option value="Genoa" />
+        <option value="Messina" />
+        <option value="Milan" />
+        <option value="Naples" />
+        <option value="Padua" />        
+        <option value="Palermo" />
+        <option value="Parma" />
+        <option value="Rome" />
+        <option value="Taranto" />
+        <option value="Triest" />
+        <option value="Turin" />
+        <option value="Venice" />
+        <option value="Verona" />
+        </datalist>
+
+    <br> 
+    
 
     <div class="input-header">When?</div>
     <div class="dates">
     <input class="text-input" type="date"><br><div class="datetext">start date</div></div>
     <div class="dates">
-	<input class="text-input" type="date"><br><div class="datetext">end date</div></div>
+    <input class="text-input" type="date"><br><div class="datetext">end date</div></div>
 
-	<br>
-	</form>
+    <br>
+    </form>
 
-	<button class="button_transparent"><i class="material-icons" id="button_align">add_circle_outline</i>add another location</button><br>
-	<input class="notification" type="checkbox" name="vehicle1" value="Bike"><span class="checkboxtext">Allow notifications about your upcoming trip</span><br>
+    <button class="button_transparent"><i class="material-icons" id="button_align">add_circle_outline</i>add another location</button><br>
+    <input class="notification" type="checkbox" name="vehicle1" value="Bike"><span class="checkboxtext">Allow notifications about your upcoming trip</span><br>
 
-	<!--For Future Implementation-->
-	<!--
-	<div class="suggestions_button"><button class="button_text" onclick="suggestions()"> Add Suggested Activities...</button></div>
-	
-	<div id="suggestions">
-		<div class="activities">
-			<div class="checkboxes">
-				<input type="checkbox">Vatican<br>
-				<input type="checkbox">Colosseum
-			</div>
+    <!--For Future Implementation-->
+    <!--
+    <div class="suggestions_button"><button class="button_text" onclick="suggestions()"> Add Suggested Activities...</button></div>
+    
+    <div id="suggestions">
+        <div class="activities">
+            <div class="checkboxes">
+                <input type="checkbox">Vatican<br>
+                <input type="checkbox">Colosseum
+            </div>
 
-			<div class="checkboxes">
-				<input class="text-suggestion" type="checkbox">Trevi Fountain<br>
-				<input class="text-suggestion" type="checkbox">St. Peter's Basilica<br>
-			</div>
-		</div>
-	</div>
-	</div>
-	<br>-->
+            <div class="checkboxes">
+                <input class="text-suggestion" type="checkbox">Trevi Fountain<br>
+                <input class="text-suggestion" type="checkbox">St. Peter's Basilica<br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>-->
 
-	<a href="PictureSelector2.html"><button class="plan-goToSelector">Begin Planning > </button></a>
-	<script src="javascript.js"></script>
+    <a href="PictureSelector2.html"><button class="plan-goToSelector">Begin Planning > </button></a>
+    <script src="javascript.js"></script>
 </body>
 </html>
