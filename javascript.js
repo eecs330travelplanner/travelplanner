@@ -35,3 +35,11 @@ function displayProfile(pic){
 		obj.display = "inline-block";
 	}
 }
+
+function styleCircle(obj) {
+	circles = obj.parentNode.getElementsByClassName("style-scale-circle");
+	for (i = 0;i < 3;i++) {
+		circles[i].style.backgroundColor = "rgba(44,66,81,0)";
+	}
+	obj.style.backgroundColor = "rgba(44,66,81,1)";
+}
