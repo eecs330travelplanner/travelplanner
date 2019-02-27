@@ -5,6 +5,10 @@ function LogIn(){
 		document.getElementById("invalid-input").innerHTML = ""
 		window.location.href = "HomePage.html";
 	}
+	if (email == "VishalGiridhar2020@u.northwestern.edu"){
+		document.getElementById("invalid-input").innerHTML = "";
+		window.location.href = "HomePage2.html"
+	}
 	else{
 		document.getElementById("invalid-input").innerHTML = "Incorrect email or password."
 	}
