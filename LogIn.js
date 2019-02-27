@@ -49,9 +49,3 @@ function spanfunction2() {
   document.getElementsByClassName("insta-button")[0].innerHTML = "Connected!";
 
 }
-
-
-//account created heading 
-function created(){
-	document.getElementById("created").style.display = "inline-block";
-}

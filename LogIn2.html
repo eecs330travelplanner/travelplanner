@@ -1,0 +1,128 @@
+
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+
+ <style>
+.loginbox{
+	margin: auto;
+	width: 40%;
+	height: 56%;
+	background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.welcome-header{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 2px;
+	margin-top: 5px;
+}
+.header-welcome-logo{
+	font-size:70px;
+	text-align: center;
+	margin-top: 0px;
+	line-height: 70px;
+}
+.plan{
+        padding-top: 20px;
+        font-size: 25px;
+        text-align:center;
+      }
+
+.text-input-2 {
+  margin-top: 5px;
+  padding-left: 3px;
+  text-align:left;	
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 245px;
+  font-size:20px;
+  padding-top:20px;
+  font-weight: normal;
+  font-family:"Raleway";
+  float: left;
+}
+
+.log-in-form{
+
+	line-height: 10px;
+	width: 250px;
+	height: 120px;
+	margin: auto;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	padding-top: 40px;
+
+}
+
+#log-in{
+	float: center;
+	margin-top: 20px;
+    text-decoration: none;
+    font-size:22px;
+    font-family: 'Raleway';
+	width:110px;
+    height:40px;
+    color:#E8F1F2;
+    background-color: #2C4251;
+    border-radius: 6px;
+}
+
+#invalid-input{
+	color: red;
+}
+
+#dont_have{
+	padding-top: 80px;
+	text-align: center;
+	line-height: 3px;
+}
+
+#create_new{
+	font-weight: 999;
+	font-size: 16px;
+	line-height: 2px;
+	color: black;
+	text-decoration: underline;
+}
+
+#created{
+  padding-top:30px;
+  font-weight: bolder;
+  font-size: 16px;
+  color:#2C4251;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="header-bar">
+  	<p class="welcome-header">Welcome to</p>
+  	<p class="header-welcome-logo">ADVENTUM</p>
+  </div>
+  <hr>
+<h2 class = "plan"> Plan your next adventure. </h2>
+<div class="loginbox">
+<div id = "created"> YOUR NEW ADVENTUM ACCOUNT HAS BEEN CREATED! </div>
+<form class = "log-in-form" target = _self> Log into your Adventum account.<br>
+	<input id="email" class="text-input-2" type="text" placeholder="email" name = "email"><br>
+	<input id="password" class = "text-input-2" type="text" placeholder="password" name = "password"><br>
+</form>
+<div id = "invalid-input"></div>
+	<button onclick="LogIn()" id = "log-in"> Log in ></button>
+<div id = "dont_have">Don't have an account?</div><br>
+<a href="CreateAccount.html" id = "create_new">Create a new Adventum account.</a><br>
+
+</div>
+
+<script src="javascript.js"></script>
+<script src="LogIn.js"></script>
+</body>
+</html>
