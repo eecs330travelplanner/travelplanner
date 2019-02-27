@@ -9,11 +9,10 @@
 .loginbox{
 	margin: auto;
 	width: 40%;
-	height: 65%;
+	height: 56%;
 	background-color: white;
     border-radius: 8px;
-    margin-top: 75px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     vertical-align: middle;
 }
 
@@ -30,9 +29,10 @@
 	line-height: 70px;
 }
 .plan{
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
+        padding-top: 20px;
+        font-size: 25px;
+        text-align:center;
+      }
 .text-input-2 {
   margin-top: 5px;
   padding-left: 3px;
@@ -50,12 +50,13 @@
 }
 
 .log-in-form{
-	padding-top: 30px;
 	line-height: 10px;
 	width: 250px;
 	height: 120px;
 	margin: auto;
 	vertical-align: middle;
+	margin-bottom: 10px;
+	padding-top: 48px;
 }
 
 #log-in{
@@ -76,7 +77,7 @@
 }
 
 #dont_have{
-	padding-top: 70px;
+	padding-top: 60px;
 	text-align: center;
 	line-height: 3px;
 }
@@ -98,8 +99,8 @@
   	<p class="header-welcome-logo">ADVENTUM</p>
   </div>
   <hr>
-<div class="loginbox">
 <h2 class = "plan"> Plan your next adventure. </h2>
+<div class="loginbox">
 <form class = "log-in-form" target = _self> Log into your Adventum account.<br>
 	<input id="email" class="text-input-2" type="text" placeholder="email" name = "email"><br>
 	<input id="password" class = "text-input-2" type="text" placeholder="password" name = "password"><br>
@@ -107,7 +108,7 @@
 <div id = "invalid-input"></div>
 	<button onclick="LogIn()" id = "log-in"> Log in ></button>
 <div id = "dont_have">Don't have an account?</div><br>
-<a href="HomePage.html" id = "create_new">Create a new Adventum account.</a><br>
+<a href="CreateAccount.html" id = "create_new">Create a new Adventum account.</a><br>
 
 </div>
 
