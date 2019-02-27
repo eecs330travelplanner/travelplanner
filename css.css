@@ -15,19 +15,63 @@ hr {
 
 a {
 	text-decoration: none;
+
 }
 
 .header-bar {
-	background-color: #E8F1F2;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 90px;
 	height:110px;
 	text-decoration: none;
+	width:100%;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.header-link {
-	text-decoration: none;
+.header-logo {
+	height:100%;
+	width:50%;
+	display: inline;
+	float:left;
+	margin-left:25%;
+	font-size: 90px;
+}
+
+.header-logo-link {
+	color:#2c4251;
+}
+
+.header-profile {
+	position:relative;
+	display:inline-block;
+	float:right;
+	width:20%;
+	height:80px;
+	margin:15px;
+	z-index: 1;
+}
+
+.header-profile-pic {
+	float:right;
+	position: relative;
+	height:100%;
+	border-radius:40px;
+	border:1px solid transparent;
+	z-index:2;
+}
+
+.header-profile-menu {
+	float:left;
+	display: none;
+	text-align: right;
+	position: relative;
+	float:right;
+	margin-right:10px;
+}
+
+.header-profile-menu-name {
+	font-size:20px;
+	margin-bottom:-10px;
+}
+
+.header-profile-menu-logOut {
 	color:#2c4251;
 }
 
@@ -73,6 +117,86 @@ a {
     margin:30px;
     border-radius: 6px;
   }
+
+/*
+	Style Preferences
+*/
+
+.style-goBackToCreate {
+	display: inline-block;
+	width:150px;
+	height:60px;
+	color:#E8F1F2;
+	font-size:20px;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+	margin-bottom:100px;
+	float:left;
+	margin:10px;
+}
+
+.style-title {
+	position: relative;
+	left:-90px;
+	display:inline-block;
+	font-size:40px;
+	margin:auto;
+	width:60%;
+}
+
+.style-scale {
+	width:800px;
+	margin:auto;
+}
+.style-scale-circle-wrap {
+	width: 380px;
+	display: inline-block;
+}
+.style-scale-circle {
+	width:50px;
+	height:50px;
+	border-radius:50px;
+	border:3px solid #2c4251;
+	background-color: rgba(44,66,81,0);
+	display:inline-block;
+	margin:10px;
+}
+.style-scale-dash {
+	font-size:45px;
+	display: inline-block;
+	position: relative;
+	top:-25px;
+}
+.style-scale-left {
+	width:200px;
+	position:relative;
+	top:-25px;
+	display:inline-block;
+	text-align:right;
+	font-size:30px;
+}
+.style-scale-right {
+	position:relative;
+	top:-25px;
+	display:inline-block;
+	text-align:left;
+	font-size:30px;
+	width:200px;
+}
+
+.style-submit {
+	margin:auto;
+	width:250px;
+	height:70px;
+	display: block;
+	font-size:28px;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+	margin-bottom:100px;
+}
 
 /* 
 	Plan New Trip Page
