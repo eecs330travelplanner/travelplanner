@@ -1,0 +1,56 @@
+<html>
+<header>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+	<link href="css.css" type="text/css" rel="stylesheet">
+</header>
+<body>
+
+<script src="javascript.js"></script>
+
+<div class="header-bar">
+	<a href="HomePage2.html" class="header-link"><p class="header-logo">ADVENTUM</p></a>
+</div>
+</body>
+
+<hr>
+
+<div class="tripboard-header">
+	<a href="PictureSelector2.html"><button class="tripboard-GoToSelect">< Select More</button></a>
+	<a href="HomePage2.html"><button class="tripboard-GoToHome">Past Boards ></button></a>
+</div>
+
+<div class="imgWrapper" onload="buildBoard(this)">
+	<div class="selector-imgBlock">
+		<img src="images/Rome1.jpg" id="selector-img1">
+		<div class="fav-button">
+			<button class="selector-imgButton">
+				<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+			</button>
+		</div>
+	</div>
+	<div class="selector-imgBlock">
+		<img src="images/Rome2.jpg" id="selector-img2">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+			</button>
+	</div>
+	<div class="selector-imgBlock">
+		<img src="images/Rome3.png" id="selector-img3">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+	</div>
+	<div class="selector-imgBlock">
+		<img src="images/Rome4.jpg" id="selector-img4">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+	</div>
+	<div class="selector-imgBlock">
+		<img src="images/Rome5.jpg" id="selector-img5">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+	</div>
+</div>
