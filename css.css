@@ -15,19 +15,63 @@ hr {
 
 a {
 	text-decoration: none;
+
 }
 
 .header-bar {
-	background-color: #E8F1F2;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 90px;
 	height:110px;
 	text-decoration: none;
+	width:100%;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.header-link {
-	text-decoration: none;
+.header-logo {
+	height:100%;
+	width:50%;
+	display: inline-block;
+	float:center;
+	margin-left:22%;
+	font-size: 90px;
+}
+
+.header-logo-link {
+	color:#2c4251;
+}
+
+.header-profile {
+	position:relative;
+	display:inline-block;
+	float:right;
+	width:20%;
+	height:80px;
+	margin:15px;
+	z-index: 1;
+}
+
+.header-profile-pic {
+	float:right;
+	position: relative;
+	height:100%;
+	border-radius:40px;
+	border:1px solid transparent;
+	z-index:2;
+}
+
+.header-profile-menu {
+	float:left;
+	display: none;
+	text-align: right;
+	position: relative;
+	float:right;
+	margin-right:10px;
+}
+
+.header-profile-menu-name {
+	font-size:20px;
+	margin-bottom:-10px;
+}
+
+.header-profile-menu-logOut {
 	color:#2c4251;
 }
 

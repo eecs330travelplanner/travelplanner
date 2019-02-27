@@ -25,3 +25,13 @@ function buildBoard(wrap) {
 function suggestions(){
 	document.getElementsByClassName("activities")[0].style.display = "inline";
 }
+
+function displayProfile(pic){
+	obj = pic.parentNode.getElementsByClassName("header-profile-menu")[0].style;
+	if (obj.display == "inline-block") {
+		obj.display = "none";
+	}
+	else {
+		obj.display = "inline-block";
+	}
+}
