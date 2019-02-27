@@ -43,3 +43,13 @@ function styleCircle(obj) {
 	}
 	obj.style.backgroundColor = "rgba(44,66,81,1)";
 }
+
+function styleGenderCircle(obj) {
+	circles = obj.parentNode.getElementsByClassName("gender-circle");
+	for (i = 0;i < 3;i++) {
+		circles[i].style.backgroundColor = "rgba(44,66,81,0)";
+		circles[i].style.color = "rgba(44,66,81,1)";
+	}
+	obj.style.backgroundColor = "rgba(44,66,81,1)";
+	obj.style.color = "white";
+}
