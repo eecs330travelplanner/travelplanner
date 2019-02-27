@@ -159,9 +159,10 @@ a {
 	position: relative;
 	left:-90px;
 	display:inline-block;
-	font-size:40px;
+	font-size:45px;
 	margin:auto;
 	width:60%;
+	font-weight: 700px;
 }
 
 .style-scale {
@@ -193,15 +194,17 @@ a {
 	top:-25px;
 	display:inline-block;
 	text-align:right;
-	font-size:30px;
+	font-size:25px;
+	font-weight: 100;
 }
 .style-scale-right {
 	position:relative;
 	top:-25px;
 	display:inline-block;
 	text-align:left;
-	font-size:30px;
+	font-size:25px;
 	width:200px;
+	font-weight: 100;
 }
 
 .style-submit {
@@ -215,6 +218,10 @@ a {
 	border-radius: 6px;
 	font-family: "Raleway";
 	margin-bottom:100px;
+}
+
+.submit-button{
+	color: #E8F1F2;
 }
 
 /* 
