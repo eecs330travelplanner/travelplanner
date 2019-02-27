@@ -5,14 +5,15 @@
   <link rel="stylesheet" type="text/css" href="css.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
-  <style>
+ <style>
 .loginbox{
 	margin: auto;
 	width: 40%;
-	height: 81%;
+	height: 80%;
 	background-color: #C4C4C4;
     border-radius: 8px;
     margin-top: 10px;
+    vertical-align: middle;
 }
 .welcome-header{
 	font-size: 30px;
@@ -27,29 +28,68 @@
 	line-height: 70px;
 }
 .plan{
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 20px;
 }
 .text-input-2 {
+  margin-top: 5px;
   padding-left: 3px;
   text-align:left;	
   border: 0;
   outline: 0;
   background: transparent;
   border-bottom: 1px solid black;
-  width: 270spx;
+  width: 245px;
   font-size:20px;
   padding-top:20px;
   font-weight: normal;
   font-family:"Raleway";
+  float: left;
 }
 
 .log-in-form{
+	padding-top: 40px;
 	line-height: 10px;
+	width: 250px;
+	height: 120px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#log-in{
+	float: center;
+	margin-top: 20px;
+    text-decoration: none;
+    font-size:25px;
+    font-family: 'Raleway';
+	width:140px;
+    height:55px;
+    color:#E8F1F2;
+    background-color: #2C4251;
+    border-radius: 6px;
+}
+
+#invalid-input{
+	color: red;
+}
+
+#dont_have{
+	padding-top: 40px;
+	text-align: center;
+	line-height: 3px;
+}
+
+#create_new{
+	font-weight: 999;
+	font-size: 16px;
+	line-height: 2px;
+	color: black;
+	text-decoration: underline;
 }
 </style>
 
 </head>
+
 <body>
   <div class="header-bar">
   	<p class="welcome-header">Welcome to</p>
@@ -58,12 +98,17 @@
   <hr>
 <div class="loginbox">
 <h2 class = "plan"> Plan your next adventure. </h2>
-<form class = "log-in-form"> Log into your Adventum account.<br>
-	<input id="email" class="text-input-2" type="text" placeholder="email"><br>
-	<input id="password" class = "text-input-2" type="text" placeholder="password">
-	<button onclick="LogIn()" id = "log-in"> Log in </button>
+<form class = "log-in-form" target = _self> Log into your Adventum account.<br>
+	<input id="email" class="text-input-2" type="text" placeholder="email" name = "email"><br>
+	<input id="password" class = "text-input-2" type="text" placeholder="password" name = "password"><br>
 </form>
-</form>
+<div id = "invalid-input"></div>
+	<button onclick="LogIn()" id = "log-in"> Log in ></button>
+<div id = "dont_have">Don't have an account?</div><br>
+<a href="HomePage.html" id = "create_new">Create a new Adventum account.</a><br>
 
 </div>
+
+<script src="LogIn.js"></script>
+</body>
 </html>
