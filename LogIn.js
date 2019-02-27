@@ -39,5 +39,8 @@ function spanfunction() {
 
 function spanfunction2() {
   document.getElementsByClassName("insta-complete")[0].style.display = "inline";
-  setTimeout(function(){document.getElementById("myModal").style.display = "none";}, 1000)
+  setTimeout(function(){document.getElementById("myModal").style.display = "none";}, 1500)
+  document.getElementsByClassName("insta-button")[0].onclick = "";
+  document.getElementsByClassName("insta-button")[0].style.outline = "none"
+  document.getElementsByClassName("insta-button")[0].innerHTML = "Connected!";
 }
