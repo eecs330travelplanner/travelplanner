@@ -510,6 +510,37 @@ input[type=checkbox]{
 	width:420px;
 }
 
+
+
+#selector2-img1 {
+	width:350px;
+	height: 400px;
+}
+#selector2-img2 {
+	width:400px;
+	height: 380px;
+}
+#selector2-img3 {
+	width:400px;
+	height: 450px;
+}
+#selector2-img4 {
+	width:260px;
+	height: 400px;
+}
+#selector2-img5 {
+	width:450px;
+}
+#selector2-img6 {
+	width:500px;
+}
+#selector2-img7 {
+	width:300px;
+}
+#selector2-img8 {
+	width:420px;
+}
+
 /*
 	Trip Board
 */
