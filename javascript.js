@@ -25,3 +25,31 @@ function buildBoard(wrap) {
 function suggestions(){
 	document.getElementsByClassName("activities")[0].style.display = "inline";
 }
+
+function displayProfile(pic){
+	obj = pic.parentNode.getElementsByClassName("header-profile-menu")[0].style;
+	if (obj.display == "inline-block") {
+		obj.display = "none";
+	}
+	else {
+		obj.display = "inline-block";
+	}
+}
+
+function styleCircle(obj) {
+	circles = obj.parentNode.getElementsByClassName("style-scale-circle");
+	for (i = 0;i < 3;i++) {
+		circles[i].style.backgroundColor = "rgba(44,66,81,0)";
+	}
+	obj.style.backgroundColor = "rgba(44,66,81,1)";
+}
+
+function styleGenderCircle(obj) {
+	circles = obj.parentNode.getElementsByClassName("gender-circle");
+	for (i = 0;i < 3;i++) {
+		circles[i].style.backgroundColor = "rgba(44,66,81,0)";
+		circles[i].style.color = "rgba(44,66,81,1)";
+	}
+	obj.style.backgroundColor = "rgba(44,66,81,1)";
+	obj.style.color = "white";
+}
