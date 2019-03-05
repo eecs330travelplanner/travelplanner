@@ -483,7 +483,6 @@ input[type=checkbox]{
 }
 
 .fav-button {
-	text-align: left;
 	position:absolute;
 	top:10px;
 	left:10px;
@@ -492,12 +491,12 @@ input[type=checkbox]{
 }
 
 .dislike-button{
-	text-align: right;
 	position:absolute;
 	top:10px;
-	left:75%;
+	right:10px;
 	display: inline-block;
 	width:60px;
+	float:right;
 }
 
 .fav-icon {
@@ -509,9 +508,9 @@ input[type=checkbox]{
 }
 
 .dislike-icon{
-	/* color:#A0EADE; */
+	color:#2C4251;
 	font-size: 50px;
-	display:inline-block;
+	display:none;
 	z-index: 3;
 	position: relative;
 }
