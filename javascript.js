@@ -11,6 +11,15 @@ function picFav(ele) {
 	}
 }
 
+function tipFav(ele) {
+	if (ele.innerHTML == "favorite_border") {
+		ele.innerHTML = "favorite";
+	}
+	else {
+		ele.innerHTML = "favorite_border";
+	}
+}
+
 function picFavTag(ele) {
 	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
 		ele.style.backgroundColor = "#E8F1F2";
