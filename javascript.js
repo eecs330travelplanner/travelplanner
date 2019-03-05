@@ -1,19 +1,37 @@
 
 function picFav(ele) {
-	if (ele.innerHTML == "favorite_border"){
-		ele.innerHTML = "favorite";
-
-		stored = JSON.parse(sessionStorage.getItem("favPics"));
-		if (stored == null){stored = []}
-		stored.push(ele.parentNode.parentNode.getElementsByTagName("img")[0].src);
-		sessionStorage.setItem("favPics", JSON.stringify(stored));
+	if (ele.parentNode.parentNode.getElementsByClassName("fav-button-dropdown")[0].style.display == "inline-block"){
+		ele.parentNode.parentNode.getElementsByClassName("fav-button-dropdown")[0].style.display = "none";
 	}
 	else {
-		ele.innerHTML = "favorite_border";
+		ele.parentNode.parentNode.getElementsByClassName("fav-button-dropdown")[0].style.display = "inline-block";
+	}
+}
 
-		stored = JSON.parse(sessionStorage.getItem("favPics"));
-		find = stored.indexOf(ele.parentNode.parentNode.getElementsByTagName("img")[0].src);
-		stored.splie(find,1);
+function picFavTag(ele) {
+	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
+		ele.style.backgroundColor = "#E8F1F2";
+		ele.style.color = "#2C4251";
+	}
+	else {
+		ele.style.backgroundColor = "#2C4251";
+		ele.style.color = "#E8F1F2"
+	}
+
+	count = 0;
+	tags = ele.parentNode.getElementsByTagName("p");
+
+	for (i=0;i<tags.length;i++){
+		if (tags[i].style.backgroundColor == "rgb(44, 66, 81)") {
+			count++;
+		}
+	}
+
+	if (count > 0) {
+		ele.parentNode.parentNode.getElementsByClassName("fav-icon")[0].innerHTML = "favorite";
+	}
+	else {
+		ele.parentNode.parentNode.getElementsByClassName("fav-icon")[0].innerHTML = "favorite_border";
 	}
 }
 
