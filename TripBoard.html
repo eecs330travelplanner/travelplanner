@@ -20,8 +20,16 @@
 	<a href="HomePage.html"><button class="tripboard-GoToHome">Past Boards ></button></a>
 </div>
 
+<div class="filter">
+  <button class="activeFilter" onclick="filterSelection(this,'all')"> Show all</button>
+  <button class="filterButton" onclick="filterSelection(this,'bottoms')"> Bottoms</button>
+  <button class="filterButton" onclick="filterSelection(this,'tops')"> Tops</button>
+  <button class="filterButton" onclick="filterSelection(this,'dresses')"> Dresses</button>
+  <button class="filterButton" onclick="filterSelection(this,'shoes')"> Shoes</button>
+</div>
+
 <div class="imgWrapper" onload="buildBoard(this)">
-	<div class="selector-imgBlock">
+	<div class="selector-imgBlock filterDiv dresses show">
 		<img src="images/Rome1.jpg" id="selector-img1">
 		<div class="fav-button">
 			<button class="selector-imgButton">
@@ -29,25 +37,27 @@
 			</button>
 		</div>
 	</div>
-	<div class="selector-imgBlock">
+	<div class="selector-imgBlock filterDiv dresses show">
 		<img src="images/Rome2.jpg" id="selector-img2">
-		<button class="selector-imgButton fav-button">
-			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		<div class="fav-button">
+			<button class="selector-imgButton">
+				<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 			</button>
+		</div>
 	</div>
-	<div class="selector-imgBlock">
-		<img src="images/Rome3.png" id="selector-img3">
+	<div class="selector-imgBlock filterDiv tops bottoms show">
+		<img  src="images/Rome3.png" id="selector-img3">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 	</div>
-	<div class="selector-imgBlock">
+	<div class="selector-imgBlock filterDiv shoes show" ">
 		<img src="images/Rome4.jpg" id="selector-img4">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 	</div>
-	<div class="selector-imgBlock">
+	<div class="selector-imgBlock filterDiv shoes show">
 		<img src="images/Rome5.jpg" id="selector-img5">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
