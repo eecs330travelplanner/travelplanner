@@ -105,9 +105,18 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
 }
 
+function showpassword(){
+	if (document.getElementById("password").type == "password";) {
+		document.getElementById("password").type = "text";
+	}
+	else if (document.getElementById("password").type = "text") {
+		document.getElementById("password").type = "password";
+	}
+
+}

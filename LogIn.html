@@ -4,6 +4,8 @@
   <title>Home Page</title>
   <link rel="stylesheet" type="text/css" href="css.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
 
  <style>
 .loginbox{
@@ -36,7 +38,7 @@
 .text-input-2 {
   margin-top: 5px;
   padding-left: 3px;
-  text-align:left;	
+  text-align:left;
   border: 0;
   outline: 0;
   background: transparent;
@@ -52,7 +54,7 @@
 .log-in-form{
 
 	line-height: 10px;
-	width: 250px;
+	width: 285px;
 	height: 120px;
 	margin: auto;
 	vertical-align: middle;
@@ -99,6 +101,15 @@
   color:#2C4251;
   display: none;
 }
+
+.password-block {
+  display: inline-block;
+}
+
+.password_eye{
+  border: none;
+  margin-top: 12px;
+}
 </style>
 
 </head>
@@ -114,7 +125,10 @@
 <div id = "created"> YOUR NEW ADVENTUM ACCOUNT HAS BEEN CREATED! </div>
 <form class = "log-in-form" target = _self> Log into your Adventum account.<br>
 	<input id="email" class="text-input-2" type="text" placeholder="email" name = "email"><br>
-	<input id="password" class = "text-input-2" type="text" placeholder="password" name = "password"><br>
+  <div class = "password-block">
+    <input id="password" class = "text-input-2" type="password" placeholder="password" name = "password" >
+    <button class="password_eye" onclick = "showpassword() "><i class="material-icons">remove_red_eye</i></button>
+  </div>
 </form>
 <div id = "invalid-input"></div>
 	<button onclick="LogIn()" id = "log-in"> Log in ></button>
