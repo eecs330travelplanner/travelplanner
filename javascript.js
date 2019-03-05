@@ -38,30 +38,25 @@ function picFavTag(ele) {
 	}
 }
 
+function picDislikeTagHover(ele) {
+	ele.getElementsByClassName("dislike-icon")[0].style.display = "inline-block";
+}
+
+function picDislikeTagLeave(ele) {
+	console.log(ele.getElementsByClassName("dislike-icon")[0].style.opacity);
+	if (ele.getElementsByClassName("dislike-icon")[0].style.opacity == "0.6") {
+		ele.getElementsByClassName("dislike-icon")[0].style.display = "none";
+	}
+}
+
 function picDislikeTag(ele) {
-	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
-		ele.style.backgroundColor = "#E8F1F2";
-		ele.style.color = "#2C4251";
+	if (ele.style.opacity == "0.6"){
+		ele.style.opacity = "1.0";
+		ele.style.display = "inline-block";
 	}
 	else {
-		ele.style.backgroundColor = "#2C4251";
-		ele.style.color = "#E8F1F2"
-	}
-
-	count = 0;
-	tags = ele.parentNode.getElementsByTagName("p");
-
-	for (i=0;i<tags.length;i++){
-		if (tags[i].style.backgroundColor == "rgb(44, 66, 81)") {
-			count++;
-		}
-	}
-
-	if (count > 0) {
-		ele.parentNode.parentNode.getElementsByClassName("dislike-icon")[0].innerHTML = "thumb_down";
-	}
-	else {
-		ele.parentNode.parentNode.getElementsByClassName("dislike-icon")[0].innerHTML = "thumb_down";
+		ele.style.opacity = "0.6";
+		ele.style.display = "none";
 	}
 }
 
