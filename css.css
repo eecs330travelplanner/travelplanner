@@ -463,6 +463,12 @@ input[type=checkbox]{
 	display: inline-block;
 	margin:20px;
 }
+.selector-imgBlock1 {
+	position: relative;
+	display: inline-block;
+	margin:20px;
+	display: none;
+}
 
 .selector-imgButton {
     background-color: Transparent;
@@ -576,4 +582,35 @@ input[type=checkbox]{
 	background-color: #2C4251;
 	border-radius: 6px;
 	font-family: "Raleway";
+}
+.filterButton{
+	text-align:center;
+	font-size:15px;
+	width: 7%;
+	height: 4%;
+	color:#2C4251;
+	background-color: #E8F1F2;
+	border-color: #2C4251;
+	border-radius: 2px;
+	font-family: "Raleway"
+	z-index:2;
+	position: relative;
+   
+}
+
+.activeFilter{
+text-align:center;
+	font-size:15px;
+	width: 7%;
+	height: 4%;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 2px;
+	font-family: "Raleway"
+	z-index:2;
+	position: relative;
+
+}
+.show {
+  display: inline-block;
 }
