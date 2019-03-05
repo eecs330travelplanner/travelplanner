@@ -446,17 +446,51 @@ input[type=checkbox]{
     overflow: hidden;
     outline:none;
     z-index:1;
+    position: relative;
+    width:100%;
 }
 
 .fav-button {
+	text-align: left;
 	position:absolute;
 	top:10px;
 	left:10px;
+	display: inline-block;
+	width:60px;
 }
 
 .fav-icon {
 	color:#A0EADE;
 	font-size: 50px;
+	display:inline-block;
+	z-index: 3;
+	position: relative;
+}
+
+.fav-button-dropdown {
+	position: absolute;
+	width:120px;
+	text-align: left;
+	background-color: #E8F1F2;
+	opacity: 0.8;
+	z-index:2;
+	border:1px solid #2C4251;
+	border-radius:4px;
+	top:10px;
+	left:80px;
+	display: none;
+}
+
+.fav-button-dropdown-tag {
+	width:75%;
+	margin:5%;
+	padding:5%;
+	border:3px solid #2C4251;
+	border-radius: 4px;
+	font-size:18px;
+	font-family: "Raleway";
+	font-weight: bold;
+	background-color: transparent;
 }
 
 #selector-img1 {
