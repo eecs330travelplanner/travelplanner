@@ -38,6 +38,34 @@ function picFavTag(ele) {
 	}
 }
 
+function picDislikeTag(ele) {
+	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
+		ele.style.backgroundColor = "#E8F1F2";
+		ele.style.color = "#2C4251";
+	}
+	else {
+		ele.style.backgroundColor = "#2C4251";
+		ele.style.color = "#E8F1F2"
+	}
+
+	count = 0;
+	tags = ele.parentNode.getElementsByTagName("p");
+
+	for (i=0;i<tags.length;i++){
+		if (tags[i].style.backgroundColor == "rgb(44, 66, 81)") {
+			count++;
+		}
+	}
+
+	if (count > 0) {
+		ele.parentNode.parentNode.getElementsByClassName("dislike-icon")[0].innerHTML = "thumb_down";
+	}
+	else {
+		ele.parentNode.parentNode.getElementsByClassName("dislike-icon")[0].innerHTML = "thumb_down";
+	}
+}
+
+
 function buildBoard(wrap) {
 	var stored = JSON.parse(sessionStorage.getItem("favPics"));
 	console.log(stored);
