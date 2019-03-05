@@ -9,7 +9,6 @@ function picFav(ele) {
 }
 
 function picFavTag(ele) {
-	console.log(ele.style.backgroundColor);
 	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
 		ele.style.backgroundColor = "#E8F1F2";
 		ele.style.color = "#2C4251";
