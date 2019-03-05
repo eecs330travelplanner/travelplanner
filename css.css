@@ -76,6 +76,25 @@ a {
 }
 
 /*
+	Create Account
+*/
+
+.create-goBackToLogin {
+	display: inline-block;
+	width:150px;
+	height:60px;
+	color:#E8F1F2;
+	font-size:20px;
+	background-color: #2C4251;
+	border-radius: 6px;
+	font-family: "Raleway";
+	margin-bottom:100px;
+	float:left;
+	margin:10px;
+
+}
+
+/*
 	Home Page
 */
 
@@ -140,9 +159,10 @@ a {
 	position: relative;
 	left:-90px;
 	display:inline-block;
-	font-size:40px;
+	font-size:45px;
 	margin:auto;
 	width:60%;
+	font-weight: 700px;
 }
 
 .style-scale {
@@ -174,15 +194,17 @@ a {
 	top:-25px;
 	display:inline-block;
 	text-align:right;
-	font-size:30px;
+	font-size:25px;
+	font-weight: 100;
 }
 .style-scale-right {
 	position:relative;
 	top:-25px;
 	display:inline-block;
 	text-align:left;
-	font-size:30px;
+	font-size:25px;
 	width:200px;
+	font-weight: 100;
 }
 
 .style-submit {
@@ -196,6 +218,10 @@ a {
 	border-radius: 6px;
 	font-family: "Raleway";
 	margin-bottom:100px;
+}
+
+.submit-button{
+	color: #E8F1F2;
 }
 
 /* 
@@ -437,6 +463,12 @@ input[type=checkbox]{
 	display: inline-block;
 	margin:20px;
 }
+.selector-imgBlock1 {
+	position: relative;
+	display: inline-block;
+	margin:20px;
+	display: none;
+}
 
 .selector-imgButton {
     background-color: Transparent;
@@ -518,6 +550,37 @@ input[type=checkbox]{
 	width:420px;
 }
 
+
+
+#selector2-img1 {
+	width:350px;
+	height: 400px;
+}
+#selector2-img2 {
+	width:400px;
+	height: 380px;
+}
+#selector2-img3 {
+	width:400px;
+	height: 450px;
+}
+#selector2-img4 {
+	width:260px;
+	height: 400px;
+}
+#selector2-img5 {
+	width:450px;
+}
+#selector2-img6 {
+	width:500px;
+}
+#selector2-img7 {
+	width:300px;
+}
+#selector2-img8 {
+	width:420px;
+}
+
 /*
 	Trip Board
 */
@@ -553,4 +616,35 @@ input[type=checkbox]{
 	background-color: #2C4251;
 	border-radius: 6px;
 	font-family: "Raleway";
+}
+.filterButton{
+	text-align:center;
+	font-size:15px;
+	width: 7%;
+	height: 4%;
+	color:#2C4251;
+	background-color: #E8F1F2;
+	border-color: #2C4251;
+	border-radius: 2px;
+	font-family: "Raleway"
+	z-index:2;
+	position: relative;
+   
+}
+
+.activeFilter{
+text-align:center;
+	font-size:15px;
+	width: 7%;
+	height: 4%;
+	color:#E8F1F2;
+	background-color: #2C4251;
+	border-radius: 2px;
+	font-family: "Raleway"
+	z-index:2;
+	position: relative;
+
+}
+.show {
+  display: inline-block;
 }

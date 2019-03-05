@@ -6,112 +6,284 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <title>CreateAccount</title>
     <style>
-      .welcome-header {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 2px;
-        margin-top: 5px;
-      }
-      .header-welcome-logo {
-      	font-size:70px;
-      	text-align: center;
-      	margin-top: 0px;
-      	line-height: 70px;
-      }
-      .create-account-box{
-        border: solid;
-        border-color: #2c4251;
-        border-radius: 10px;
-        background-color:#2c4251;
-        margin-left: 25%;
-        margin-right: 25%;
-        color: white
+      .create_account_box{
+        margin: auto;
+        width: 40%;
+        height: 56%;
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        vertical-align: middle;
       }
 
       .create-account-form{
-        padding-top: 20px;
+        padding-top: 10px;
       }
 
       .fields{
         /* display: inline-block; */
-        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
-      .text-input-2 {
+      .text-input-3 {
+        margin-top: 5px;
         padding-left: 3px;
-        text-align:left;
+        text-align:left;  
+        border: 0;
         outline: 0;
-        color:#2c4251;
-        background: white;
-        border: 2px solid white;
-        border-radius: 5px;
-        width: 400px;
+        background: transparent;
+        border-bottom: 1px solid black;
+        width: 260px;
         font-size:20px;
-        padding-top:20px;
+        padding-top:10px;
         font-weight: normal;
         font-family:"Raleway";
       }
-      .create-account-button{
+      .continue-button{
         text-decoration: none;
         font-size:25px;
         font-family: 'Raleway';
-        width:300px;
-        height:80px;
+        width:210px;
+        height:60px;
         color:#E8F1F2;
         background-color: #2C4251;
         border-radius: 6px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
 
       .insta-button{
-        width: 200px;
+        width: 230px;
         height: 50px;
         font-family: 'Raleway';
         font-size:15px;
         color:#2C4251;
         font-weight: bold;
         border-radius: 6px;
-        background-color:white;
-        margin-bottom: 20px;
+        background-color: #E8F1F2;
       }
-    </style>
+      .instagram{
+        padding-top: 8px;
+      }
+      .create_new_account{
+        font-size: 25px;
+        text-align:center;
+        position: relative;
+        margin:auto;
+        width:40%;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+      .instagram-login{
+        padding-top: 20px;
+        font-size: 25px;
+        text-align:center;
+        display:none;
+      }
+      .instagram-login-box{
+        display: none;
+      }
+      #instagramLogo{
+        width: 35px;
+        height: 35px;
+        float: left;
+        display: inline-block;
+      }
+      .connect-text{
+        padding-top: 8px;
+      }
 
-  </head>
 
-  <body>
+
+.header-insta img {
+  height: 50px;
+  width: 175px;
+  margin: auto;
+  text-align:center;
+  padding-bottom: 20px;
+}
+
+.input-1,
+.input-2 {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.overlap-text {
+  position: relative;
+}
+
+.overlap-text a {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #003569;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Overpass Mono', monospace;
+  letter-spacing: -1px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  padding: 5px 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.sub-content {
+  width: 250px;
+  height: 40%;
+  margin: 10px auto;
+  border: 1px solid #e6e6e6;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+
+.s-part {
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  word-spacing: -3px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+
+.s-part a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3897f0;
+  font-family: 'Overpass Mono', monospace;
+  word-spacing: -3px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  height: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.insta-complete{
+  text-align: center;
+  display: none;
+  margin-top: 40px;
+}
+
+.insta-wrapper{
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <script src="LogIn.js"></script>
+
     <div class="header-bar">
-      <p class="welcome-header">Welcome to</p>
-    	<p class="header-welcome-logo">ADVENTUM</p>
-    </div>
+      <div class="header-logo">ADVENTUM</div>
+    </a>
+  </div>
+  <hr>
 
-    <hr>
-    <h1> Create a new account </h1>
-    <div class = "create-account-box">
+  <a href="LogIn.html"><button class="create-goBackToLogin">
+    < Go Back
+  </button></a>
+
+    
+    <h1 class = "create_new_account"> Create a new account </h1>
+    <div class = "create_account_box">
       <form class = "create-account-form">
           <div class = "fields">
-            <input id="first-name-field" class = "text-input-2" placeholder="First Name" type="text" oninput = "myFunction()">
+            <input id="first-name-field" class = "text-input-3" placeholder="First Name" type="text" oninput = "myFunction()"> <br>
           </div>
           <div class = "fields">
-            <input id="last-name-field" class = "text-input-2" placeholder="Last Name" type="text">
+            <input id="last-name-field" class = "text-input-3" placeholder="Last Name" type="text"> <br>
           </div>
           <div class = "fields">
-            <input id="email-field" class = "text-input-2" placeholder="Email" type="text">
+            <input id="email-field" class = "text-input-3" placeholder="Email" type="text"> <br>
           </div>
           <div class = "fields">
-            <input id="password-field" class = "text-input-2" placeholder="Password" type="text">
+            <input id="password-field" class = "text-input-3" placeholder="Password" type="text"> <br>
           </div>
       </form>
 
-      <div class="Instagram">
-      <h3> Log into your Instrgram account for even better planning. </h3>
-      <button class="insta-button">Connect Your Instgram</button>
-      <!-- <div class = "fields">
-        <input id="Insta-Username" class = "text-input-2" placeholder="Instagram Username" type="text" oninput = "myFunction()">
+      
+      
+<div class="Instagram">
+  <h3> Log into your Instagram account for even better planning. </h3>
+  <button id="myBtn" onclick = "btnfunction()" class="insta-button"><img src="images/instagramlogo.png" id="instagramLogo"><div class = "connect-text">Connect Your Instagram</div></button>
+
+</div>
+  </div>
+
+  
+
+  <div id="myModal" class="modal">
+
+  <div class="modal-content">
+        <span class="close" onclick = "spanfunction()">&times;</span>
+    <div class = "insta-wrapper">
+      <div class="header-insta">
+        <img src="https://i.imgur.com/zqpwkLQ.png" />
       </div>
-      <div class = "fields">
-        <input id="Insta-Password" class = "text-input-2" placeholder="Instagram Password" type="text" oninput = "myFunction()">
-      </div> -->
+      <div class="l-part">
+        <input type="text" placeholder="Username" class="input-1" />
+        <input type="password" placeholder="Password" class="input-2" />
+        <input type="button" value="Log in" class="btn" onclick = "spanfunction2()"/>
+      </div>
+    </div>
+    <div class = "insta-complete"> Instagram Sucessfully Connected </div>
     </div>
     </div>
-    <a  href="StylePreferences.html"><button class="create-account-button"> Create Your Account </button> </a>
+    <a class = "continue-button" href="StylePreferences.html" id = "create_new"><button class = "continue-button"> Continue ></button></a>
   </body>
 </html>

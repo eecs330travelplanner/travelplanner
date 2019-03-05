@@ -4,11 +4,29 @@
   <link rel="stylesheet" type="text/css" href="css.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <style>
+  .gender-circle{
+    width:100px;
+    height:50px;
+    border-radius:50px;
+    border:3px solid #2c4251;
+    background-color: rgba(44,66,81,0);
+    display: inline-block;
+    margin:10px;
+    margin-bottom: 60px;
+    font-size:20px;
+    padding-bottom: 10px;
+}
+.style-categories{
+  font-weight: normal;
+}
+</style>
 </head>
 
 <body>
 
 <script src="javascript.js"></script>
+<script src = "LogIn.js"></script>
 
   <div class="header-bar">    
     <div class="header-logo">ADVENTUM</div>
@@ -21,10 +39,15 @@
   </button></a>
   
   <div class="style-title"><p>Tell Us Your Style</p></div>
+  <h2 class = "style-categories"> CLOTHING PREFERENCE</h2>
 
   <div class="style-wrap">
+    <div onclick = "styleGenderCircle(this)" class = "gender-circle"><p>Female</p></div>
+    <div onclick = "styleGenderCircle(this)" class = "gender-circle"><p> Male</p></div>
+    <div onclick = "styleGenderCircle(this)" class = "gender-circle"><p> Unisex </p></div>
+    <h2 class = "style-categories">CLOTHING STYLE</h2>
     <div class="style-scale">
-      <div class="style-scale-left">Fancy</div>
+      <div class="style-scale-left">Casual</div>
       <div class="style-scale-circle-wrap">
         <div class="style-scale-circle" onclick="styleCircle(this)"></div>
         <p class="style-scale-dash">&#8212</p>
@@ -32,10 +55,10 @@
         <p class="style-scale-dash">&#8212</p>
         <div class="style-scale-circle" onclick="styleCircle(this)"></div>
       </div>
-      <div class="style-scale-right">Casual</div>
+      <div class="style-scale-right">Fancy</div>
     </div>
     <div class="style-scale">
-      <div class="style-scale-left">Pants</div>
+      <div class="style-scale-left">Conservative</div>
       <div class="style-scale-circle-wrap">
         <div class="style-scale-circle" onclick="styleCircle(this)"></div>
         <p class="style-scale-dash">&#8212</p>
@@ -43,10 +66,10 @@
         <p class="style-scale-dash">&#8212</p>
         <div class="style-scale-circle" onclick="styleCircle(this)"></div>
       </div>
-      <div class="style-scale-right">Dresses</div>
+      <div class="style-scale-right">Trendy</div>
     </div>
     <div class="style-scale">
-      <div class="style-scale-left">Trendy</div>
+      <div class="style-scale-left">Simple</div>
       <div class="style-scale-circle-wrap">
         <div class="style-scale-circle" onclick="styleCircle(this)"></div>
         <p class="style-scale-dash">&#8212</p>
@@ -54,11 +77,33 @@
         <p class="style-scale-dash">&#8212</p>
         <div class="style-scale-circle" onclick="styleCircle(this)"></div>
       </div>
-      <div class="style-scale-right">Conservative</div>
+      <div class="style-scale-right">Statement</div>
+    </div>
+    <div class="style-scale">
+      <div class="style-scale-left">Neutral</div>
+      <div class="style-scale-circle-wrap">
+        <div class="style-scale-circle" onclick="styleCircle(this)"></div>
+        <p class="style-scale-dash">&#8212</p>
+        <div class="style-scale-circle" onclick="styleCircle(this)"></div>
+        <p class="style-scale-dash">&#8212</p>
+        <div class="style-scale-circle" onclick="styleCircle(this)"></div>
+      </div>
+      <div class="style-scale-right">Bold Colors</div>
+    </div>
+    <div class="style-scale">
+      <div class="style-scale-left">Preppy</div>
+      <div class="style-scale-circle-wrap">
+        <div class="style-scale-circle" onclick="styleCircle(this)"></div>
+        <p class="style-scale-dash">&#8212</p>
+        <div class="style-scale-circle" onclick="styleCircle(this)"></div>
+        <p class="style-scale-dash">&#8212</p>
+        <div class="style-scale-circle" onclick="styleCircle(this)"></div>
+      </div>
+      <div class="style-scale-right">Edgy</div>
     </div>
   </div>
 
-  <a href="HomePage.html"><button class="style-submit">
-    Create Account
-  </button></a>
+  <button class="style-submit"><a href="LogIn2.html" class = "submit-button">
+    Create Account ></a>
+  </button>
 </body>
