@@ -1,6 +1,7 @@
 var female = 0
 var male = 0
 var unisex = 0
+
 function picFav(ele) {
 	if (ele.parentNode.parentNode.getElementsByClassName("fav-button-dropdown")[0].style.display == "inline-block"){
 		ele.parentNode.parentNode.getElementsByClassName("fav-button-dropdown")[0].style.display = "none";
@@ -65,20 +66,6 @@ function styleCircle(obj) {
 }
 
 function styleGenderCircle(obj) {
-	gender = document.getElementsByClassName("gender-circle")[0].innerHTML;
-	if (gender == "Female"){
-		female = 1;
-		male = 0;
-		unisex = 0;
-	}
-	else if (gender == "Male"){
-		male = 1;
-		female = 0;
-		unisex = 0;
-	}
-	else if (gender == "Unisex"){
-
-	}
 	circles = obj.parentNode.getElementsByClassName("gender-circle");
 	for (i = 0;i < 3;i++) {
 		circles[i].style.backgroundColor = "rgba(44,66,81,0)";
@@ -88,15 +75,32 @@ function styleGenderCircle(obj) {
 	obj.style.color = "white";
 }
 
+function femClothingQuiz(){
+	female = 1;
+	male = 0;
+	unisex = 0;
+}
+
+function maleClothingQuiz(){
+	male = 1;
+	female = 0;
+	unisex = 0;
+}
+function uniClothingQuiz(){
+	unisex = 1;
+	male = 0;
+	female = 0;
+}
+
 function clothingQuiz(){
 	if (female == 1){
-		document.getElementsByClassName("next-button").href = "womenClothingQuiz.html"
+		document.getElementsByClassName("next-button")[0].href = "womenClothingQuiz.html"
 	}
 	else if (male == 1){
-		document.getElementsByClassName("next-button").href = "menClothingQuiz.html"
+		document.getElementsByClassName("next-button")[0].href = "menClothingQuiz.html"
 	}
 	else if (unisex == 1){
-		document.getElementsByClassName("next-button").href = "menClothingQuiz.html"
+		document.getElementsByClassName("next-button")[0].href = "menClothingQuiz.html"
 	}
 }
 
