@@ -1,3 +1,6 @@
+var female = 0
+var male = 0
+var unisex = 0
 
 function picFav(ele) {
 	if (ele.parentNode.parentNode.getElementsByClassName("fav-button-dropdown")[0].style.display == "inline-block"){
@@ -35,6 +38,34 @@ function picFavTag(ele) {
 	}
 }
 
+function picDislikeTag(ele) {
+	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
+		ele.style.backgroundColor = "#E8F1F2";
+		ele.style.color = "#2C4251";
+	}
+	else {
+		ele.style.backgroundColor = "#2C4251";
+		ele.style.color = "#E8F1F2"
+	}
+
+	count = 0;
+	tags = ele.parentNode.getElementsByTagName("p");
+
+	for (i=0;i<tags.length;i++){
+		if (tags[i].style.backgroundColor == "rgb(44, 66, 81)") {
+			count++;
+		}
+	}
+
+	if (count > 0) {
+		ele.parentNode.parentNode.getElementsByClassName("dislike-icon")[0].innerHTML = "thumb_down";
+	}
+	else {
+		ele.parentNode.parentNode.getElementsByClassName("dislike-icon")[0].innerHTML = "thumb_down";
+	}
+}
+
+
 function buildBoard(wrap) {
 	var stored = JSON.parse(sessionStorage.getItem("favPics"));
 	console.log(stored);
@@ -71,6 +102,36 @@ function styleGenderCircle(obj) {
 	obj.style.backgroundColor = "rgba(44,66,81,1)";
 	obj.style.color = "white";
 }
+
+function femClothingQuiz(){
+	female = 1;
+	male = 0;
+	unisex = 0;
+}
+
+function maleClothingQuiz(){
+	male = 1;
+	female = 0;
+	unisex = 0;
+}
+function uniClothingQuiz(){
+	unisex = 1;
+	male = 0;
+	female = 0;
+}
+
+function clothingQuiz(){
+	if (female == 1){
+		document.getElementsByClassName("next-button")[0].href = "womenClothingQuiz.html"
+	}
+	else if (male == 1){
+		document.getElementsByClassName("next-button")[0].href = "menClothingQuiz.html"
+	}
+	else if (unisex == 1){
+		document.getElementsByClassName("next-button")[0].href = "menClothingQuiz.html"
+	}
+}
+
 function filterSelection(ele,c) {
 	temp = ele.parentNode.getElementsByClassName("activeFilter")[0];
 	temp.classList.remove("activeFilter")
@@ -105,9 +166,18 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
 }
 
+function showpassword(){
+	if (document.getElementById("password").type == "password") {
+		document.getElementById("password").type = "text";
+	}
+	else if (document.getElementById("password").type = "text") {
+		document.getElementById("password").type = "password";
+	}
+
+}
