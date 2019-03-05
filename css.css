@@ -525,6 +525,11 @@ input[type=checkbox]{
 	background-color: transparent;
 }
 
+.fav-button-dropdown-tag-selected {
+	background-color:rgb(44, 66, 81);
+	color: #E8F1F2;
+}
+
 #selector-img1 {
 	width:300px;
 }
