@@ -668,3 +668,18 @@ text-align:center;
 .show {
   display: inline-block;
 }
+
+.selector-tipBlock1 {
+	position: relative;
+	margin-left:20%;
+	display:block;
+	width:60%;
+	border:5px solid #2C4251;
+	font-size:30px;
+}
+
+.selector-tipsText {
+	margin:10px;
+	margin-left:70px;
+	margin-right:70px;
+}
