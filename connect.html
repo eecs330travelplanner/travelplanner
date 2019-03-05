@@ -6,18 +6,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <title>CreateAccount</title>
     <style>
-      .create_account_box{
-        margin: auto;
+      .connect_box{
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
         width: 40%;
-        height: 50%;
+        height: 30%;
         background-color: white;
         border-radius: 8px;
         margin-bottom: 10px;
-        vertical-align: middle;
       }
 
       .create-account-form{
-        padding-top: 40px;
+        padding-top: 10px;
       }
 
       .fields{
@@ -51,6 +52,7 @@
       }
 
       .insta-button{
+        margin-top: 25px;
         width: 230px;
         height: 50px;
         font-family: 'Raleway';
@@ -89,6 +91,10 @@
       }
       .connect-text{
         padding-top: 8px;
+      }
+
+      .personal_text{
+        margin-top: 30px;
       }
 
 
@@ -232,33 +238,39 @@
       <div class="header-logo">ADVENTUM</div>
     </a>
   </div>
+
   <hr>
 
-  <a href="LogIn.html"><button class="create-goBackToLogin">
+  <a href="CreateAccount.html"><button class="create-goBackToLogin">
     < Go Back
   </button></a>
-
     
-    <h1 class = "create_new_account"> Create a new account </h1>
-    <div class = "create_account_box">
-      <form class = "create-account-form">
-          <div class = "fields">
-            <input id="first-name-field" class = "text-input-3" placeholder="First Name" type="text" oninput = "myFunction()"> <br>
-          </div>
-          <div class = "fields">
-            <input id="last-name-field" class = "text-input-3" placeholder="Last Name" type="text"> <br>
-          </div>
-          <div class = "fields">
-            <input id="email-field" class = "text-input-3" placeholder="Email" type="text"> <br>
-          </div>
-          <div class = "fields">
-            <input id="password-field" class = "text-input-3" placeholder="Password" type="text"> <br>
-          </div>
-      </form>
+<div class = "connect_box">
+        
+<div class="Instagram">
+  <h3 class = "personal_text"> For better travel planning, connect your Instagram. </h3>
+  <button id="myBtn" onclick = "btnfunction()" class="insta-button"><img src="images/instagramlogo.png" id="instagramLogo"><div class = "connect-text">Connect your Instagram</div></button>
 
-      
-  
+</div>
   </div>
-    <a class = "continue-button" href="connect.html" id = "create_new"><button class = "continue-button"> Continue ></button></a>
+
+  <div id="myModal" class="modal">
+
+  <div class="modal-content">
+        <span class="close" onclick = "spanfunction()">&times;</span>
+    <div class = "insta-wrapper">
+      <div class="header-insta">
+        <img src="https://i.imgur.com/zqpwkLQ.png" />
+      </div>
+      <div class="l-part">
+        <input type="text" placeholder="Username" class="input-1" />
+        <input type="password" placeholder="Password" class="input-2" />
+        <input type="button" value="Log in" class="btn" onclick = "spanfunction2()"/>
+      </div>
+    </div>
+    <div class = "insta-complete"> Instagram Sucessfully Connected </div>
+    </div>
+    </div>
+    <a class = "continue-button" href="StylePreferences.html" id = "create_new"><button id = "skip" class = "continue-button"> Skip ></button></a>
   </body>
 </html>
