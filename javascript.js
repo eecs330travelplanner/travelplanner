@@ -168,12 +168,12 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-function showpassword(){
-	if (document.getElementById("password").type == "password") {
-		document.getElementById("password").type = "text";
+function showPassword(){
+	var x = document.getElementById("password");
+	if(x.type === "password"){
+		x.type = "text";
 	}
-	else if (document.getElementById("password").type = "text") {
-		document.getElementById("password").type = "password";
+	else{
+		x.type = "password"
 	}
-
 }
