@@ -49,3 +49,17 @@ function spanfunction2() {
   document.getElementsByClassName("insta-button")[0].innerHTML = "Connected!";
   document.getElementById("skip").innerHTML = "Continue >"
 }
+
+
+function selectedImage(obj, picture){
+	pictureNum = String(picture).slice(-1);
+	obj.style = "box-shadow: 0px 6px 12px 1px #333;";
+	if (pictureNum == 1){
+		removePictureId = String(picture).replace("1", "2");
+		document.getElementById(removePictureId).style = "box-shadow: 0px 0px 0px 0px";
+	}
+	else if(pictureNum == 2){
+		removePictureId = String(picture).replace("2", "1");
+		document.getElementById(removePictureId).style = "box-shadow: 0px 0px 0px 0px";
+	}
+}

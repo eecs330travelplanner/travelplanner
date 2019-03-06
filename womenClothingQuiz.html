@@ -1,4 +1,4 @@
-<html>
+  <html>
 <head>
   <title>Style Preferences</title>
   <link rel="stylesheet" type="text/css" href="css.css">
@@ -33,6 +33,38 @@
         background-color: #2C4251;
         border-radius: 6px;
       }
+  .question{
+    width: 700px;
+    height: 450px;
+    margin:auto;
+  }
+
+  .style-pic{
+    width: 250px;
+    height: 350px;
+    display: inline-block;
+    padding:10px;
+
+  }
+  .style{
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  .selected{
+     box-shadow: 0px 6px 12px 1px #333;
+  }
+
+  .style-name{
+    margin-top: 5px;
+  }
+
+  .style-subtitle{
+    margin-top: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
 </style>
 </head>
 
@@ -51,11 +83,54 @@
     < Go Back
   </button></a>
   
-  <div class="style-title"><p>Tell Us About Your Style</p></div>
+  <div class="style-title">Tell Us About Your Style</div>
+  <div class = "style-subtitle">Select the image that represents your style best</div>
 
-  
+  <div class = "questiona">
+    <div class = "style">
+    <img onclick = "selectedImage(this, 'a1')" id = "a1" src="images/modern.jpeg" class ="style-pic">
+    <div class ="style-name">Modern</div>
+  </div>
+  <div class = "style">
+    <img onclick = "selectedImage(this, 'a2')" id = "a2" src="images/classic.jpg" class="style-pic">
+    <div class = "style-name">Classic</div>
+  </div>
+  </div>
 
-  <button class="next-button-box"><a href="styleImages.html" class = "next-button">
-    Next ></a>
-  </button>
+    <div class = "questionb">
+    <div class = "style">
+    <img onclick = "selectedImage(this, 'b1')" id = "b1" src="images/sneakers.png" class ="style-pic">
+    <div class = "style-name">Sneakers</div>
+  </div>
+  <div class = "style">
+    <img onclick = "selectedImage(this, 'b2')" id = "b2" src="images/heels.png" class="style-pic">
+    <div class = "style-name">Heels</div>
+  </div>
+  </div>
+
+    <div class = "questionc">
+    <div class = "style">
+    <img onclick = "selectedImage(this, 'c1')" id = "c1" src="images/casual.jpeg" class ="style-pic">
+    <div class = "style-name">Casual</div>
+  </div>
+  <div class = "style">
+    <img onclick = "selectedImage(this, 'c2')" id = "c2" src="images/fancy.png" class="style-pic">
+    <div class = "style-name">Fancy</div>
+  </div>
+  </div>
+
+    <div class = "questiond">
+    <div class = "style">
+    <img onclick = "selectedImage(this, 'd1')" id = "d1" src="images/leegings.jpeg" class ="style-pic">
+    <div class = "style-name">Leggings</div>
+  </div>
+  <div class = "style">
+    <img onclick = "selectedImage(this, 'd2')" id = "d2" src="images/jeans.jpeg" class="style-pic">
+    <div class = "style-name">Jeans</div>
+  </div>
+  </div>
+
+  <a href="LogIn2.html" class = "next-button"><button class="next-button-box">
+    Next >
+  </button></a>
 </body>
