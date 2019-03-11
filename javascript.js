@@ -11,6 +11,15 @@ function picFav(ele) {
 	}
 }
 
+function tipFav(ele) {
+	if (ele.innerHTML == "favorite_border") {
+		ele.innerHTML = "favorite";
+	}
+	else {
+		ele.innerHTML = "favorite_border";
+	}
+}
+
 function picFavTag(ele) {
 	if (ele.style.backgroundColor == "rgb(44, 66, 81)"){
 		ele.style.backgroundColor = "#E8F1F2";
@@ -37,6 +46,29 @@ function picFavTag(ele) {
 		ele.parentNode.parentNode.getElementsByClassName("fav-icon")[0].innerHTML = "favorite_border";
 	}
 }
+
+function picDislikeTagHover(ele) {
+	ele.getElementsByClassName("dislike-icon")[0].style.display = "inline-block";
+}
+
+function picDislikeTagLeave(ele) {
+	console.log(ele.getElementsByClassName("dislike-icon")[0].style.opacity);
+	if (ele.getElementsByClassName("dislike-icon")[0].style.opacity == "0.6") {
+		ele.getElementsByClassName("dislike-icon")[0].style.display = "none";
+	}
+}
+
+function picDislikeTag(ele) {
+	if (ele.style.opacity == "0.6"){
+		ele.style.opacity = "1.0";
+		ele.style.display = "inline-block";
+	}
+	else {
+		ele.style.opacity = "0.6";
+		ele.style.display = "none";
+	}
+}
+
 
 function buildBoard(wrap) {
 	var stored = JSON.parse(sessionStorage.getItem("favPics"));
@@ -144,12 +176,12 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-function showpassword(){
-	if (document.getElementById("password").type == "password") {
-		document.getElementById("password").type = "text";
+function showPassword(){
+	var x = document.getElementById("password");
+	if(x.type === "password"){
+		x.type = "text";
 	}
-	else if (document.getElementById("password").type = "text") {
-		document.getElementById("password").type = "password";
+	else{
+		x.type = "password"
 	}
-
 }

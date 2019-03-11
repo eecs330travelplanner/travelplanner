@@ -30,11 +30,12 @@
 	<a href="HomePage.html"><button class="tripboard-GoToHome">Past Boards ></button></a>
 </div>
 <div class="filter">
-  <button class="activeFilter" onclick="filterSelection(this,'all')"> Show all</button>
-  <button class="filterButton" onclick="filterSelection(this,'bottoms')"> Bottoms</button>
-  <button class="filterButton" onclick="filterSelection(this,'tops')"> Tops</button>
-  <button class="filterButton" onclick="filterSelection(this,'dresses')"> Dresses</button>
-  <button class="filterButton" onclick="filterSelection(this,'shoes')"> Shoes</button>
+  <button class="activeFilter" onclick="filterSelection(this,'all')">Show all</button>
+  <button class="filterButton" onclick="filterSelection(this,'bottoms')">Bottoms</button>
+  <button class="filterButton" onclick="filterSelection(this,'tops')">Tops</button>
+  <button class="filterButton" onclick="filterSelection(this,'dresses')">Dresses</button>
+  <button class="filterButton" onclick="filterSelection(this,'shoes')">Shoes</button>
+  <button class="filterButton" onclick="filterSelection(this,'tips')">Tips</button>
 </div>
 
 
@@ -45,7 +46,7 @@
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 		<div class="fav-button-dropdown">
-			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)">Dress</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Dress</p>
 		</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv dresses show">
@@ -54,7 +55,7 @@
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 		<div class="fav-button-dropdown">
-			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)">Dress</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Dress</p>
 			<p class="fav-button-dropdown-tag" onclick="picFavTag(this)">Shoes</p>
 		</div>
 	</div>
@@ -64,10 +65,17 @@
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 		<div class="fav-button-dropdown">
-			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)">Top</p>
-			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)">Bottom</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Top</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Bottom</p>
 			<p class="fav-button-dropdown-tag" onclick="picFavTag(this)">Shoes</p>
 		</div>
+	</div>
+	
+	<div class="selector-imgBlock1 filterDiv tips show">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="tipFav(this)">favorite</i>
+		</button>
+		<div class="selector-tipsText">When visiting the Vatican, remember to always keep your shoulders and knees covered!</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv shoes show" ">
 		<img src="images/Rome4.jpg" id="selector-img4">
@@ -75,7 +83,7 @@
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 		<div class="fav-button-dropdown">
-			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)">Shoes</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Shoes</p>
 		</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv shoes show">
@@ -84,7 +92,18 @@
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
 		<div class="fav-button-dropdown">
-			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)">Shoes</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Shoes</p>
 		</div>
 	</div>
+	<div class="selector-imgBlock1 filterDiv tops  show">
+		<img  src="images/Rome6.jpg" id="selector-img3">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Top</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Bottom</p>
+			<p class="fav-button-dropdown-tag" onclick="picFavTag(this)">Shoes</p>
+		</div>
+	</div> 
 </div>

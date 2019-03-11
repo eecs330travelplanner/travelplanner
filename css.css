@@ -224,7 +224,7 @@ a {
 	color: #E8F1F2;
 }
 
-/* 
+/*
 	Plan New Trip Page
 */
 
@@ -250,7 +250,7 @@ a {
 }
 .text-input {
   margin-left:18px;
-  text-align:left;	
+  text-align:left;
   padding-left:5px;
   border: 0;
   outline: 0;
@@ -401,7 +401,7 @@ input[type=checkbox]{
 	float:left;
 	width:40%;
 	height:120%;
-	
+
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -483,7 +483,6 @@ input[type=checkbox]{
 }
 
 .fav-button {
-	text-align: left;
 	position:absolute;
 	top:10px;
 	left:10px;
@@ -491,10 +490,27 @@ input[type=checkbox]{
 	width:60px;
 }
 
+.dislike-button{
+	position:absolute;
+	top:10px;
+	right:10px;
+	display: inline-block;
+	width:60px;
+	float:right;
+}
+
 .fav-icon {
 	color:#A0EADE;
 	font-size: 50px;
 	display:inline-block;
+	z-index: 3;
+	position: relative;
+}
+
+.dislike-icon{
+	color:#2C4251;
+	font-size: 50px;
+	display:none;
 	z-index: 3;
 	position: relative;
 }
@@ -526,7 +542,6 @@ input[type=checkbox]{
 }
 
 .fav-button-dropdown-tag-selected {
-	background-color:rgb(44, 66, 81);
 	color: #E8F1F2;
 }
 
@@ -559,19 +574,15 @@ input[type=checkbox]{
 
 #selector2-img1 {
 	width:350px;
-	height: 400px;
 }
 #selector2-img2 {
 	width:400px;
-	height: 380px;
 }
 #selector2-img3 {
 	width:400px;
-	height: 450px;
 }
 #selector2-img4 {
 	width:260px;
-	height: 400px;
 }
 #selector2-img5 {
 	width:450px;
@@ -634,7 +645,7 @@ input[type=checkbox]{
 	font-family: "Raleway"
 	z-index:2;
 	position: relative;
-   
+
 }
 
 .activeFilter{
@@ -652,4 +663,28 @@ text-align:center;
 }
 .show {
   display: inline-block;
+}
+
+.tips {
+	position: relative;
+	width:60%;
+	margin-left:20%;
+	margin-right:20%;
+	border:5px solid #2C4251;
+	font-size:30px;
+}
+
+.selector-tipsText {
+	margin:10px;
+	margin-left:70px;
+	margin-right:70px;
+}
+
+.tips {
+	position: relative;
+	width:60%;
+	margin-left:20%;
+	margin-right:20%;
+	border:5px solid #2C4251;
+	font-size:30px;
 }

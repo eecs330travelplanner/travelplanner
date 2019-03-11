@@ -9,7 +9,7 @@
 .loginbox{
 	margin: auto;
 	width: 40%;
-	height: 56%;
+	height: 58%;
 	background-color: white;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -38,7 +38,7 @@
 .text-input-2 {
   margin-top: 5px;
   padding-left: 3px;
-  text-align:left;	
+  text-align:left;
   border: 0;
   outline: 0;
   background: transparent;
@@ -81,7 +81,7 @@
 }
 
 #dont_have{
-	padding-top: 50px;
+	padding-top: 30px;
 	text-align: center;
 	line-height: 3px;
 }
@@ -100,6 +100,9 @@
   font-size: 16px;
   color:#34A2B7;
 }
+.passsword_checkbox{
+  margin-top: 12px;
+}
 </style>
 
 </head>
@@ -115,8 +118,10 @@
 <div id = "created"> YOUR NEW ADVENTUM ACCOUNT HAS BEEN CREATED! </div>
 <form class = "log-in-form" target = _self> Log into your Adventum account.<br>
 	<input id="email" class="text-input-2" type="text" placeholder="email" name = "email"><br>
-	<input id="password" class = "text-input-2" type="text" placeholder="password" name = "password"><br>
+	<input id="password" class = "text-input-2" type="password" placeholder="password" name = "password"><br>
+  <input type="checkbox" onclick = "showPassword() " class="passsword_checkbox"> Show Password
 </form>
+<br>
 <div id = "invalid-input"></div>
 	<button onclick="LogIn()" id = "log-in"> Log in ></button>
 <div id = "dont_have">Don't have an account?</div><br>
