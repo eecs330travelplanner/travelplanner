@@ -441,7 +441,7 @@ input[type=checkbox]{
 }
 
 .selector-info {
-	float:left;
+	float:center;
 	display:inline-block;
 	width:35%;
 	height:100%;
@@ -631,6 +631,7 @@ input[type=checkbox]{
 	font-family: "Raleway";
 }
 .filterButton{
+	margin-top:40px;
 	text-align:center;
 	font-size:15px;
 	width: 7%;
