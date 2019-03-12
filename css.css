@@ -512,7 +512,7 @@ input[type=checkbox]{
 	font-size: 50px;
 	z-index: 3;
 	position: relative;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .fav-button-dropdown {
@@ -597,6 +597,11 @@ input[type=checkbox]{
 	width:420px;
 }
 
+.selector-img{
+	width:350px;
+	height:350px;
+}
+
 /*
 	Trip Board
 */
@@ -667,24 +672,17 @@ text-align:center;
 
 .tips {
 	position: relative;
-	width:60%;
-	margin-left:20%;
-	margin-right:20%;
-	border:5px solid #2C4251;
-	font-size:30px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	/*border:5px solid #2C4251;*/
+	font-size:27px;
+	background-color: white;
 }
 
 .selector-tipsText {
-	margin:10px;
-	margin-left:70px;
-	margin-right:70px;
-}
-
-.tips {
-	position: relative;
-	width:60%;
-	margin-left:20%;
-	margin-right:20%;
-	border:5px solid #2C4251;
-	font-size:30px;
+	width: 350px;
+	height: 350px;
+	background-color: white;
+	text-align:center;
 }

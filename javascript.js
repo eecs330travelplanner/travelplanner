@@ -49,7 +49,7 @@ function picFavTag(ele) {
 
 function picDislikeTag(ele) {
 	if (ele.style.opacity == "1"){
-		ele.style.opacity = "0.5";
+		ele.style.opacity = "0.6";
 	}
 	else {
 		ele.style.opacity = "1";
