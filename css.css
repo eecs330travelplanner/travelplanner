@@ -508,11 +508,11 @@ input[type=checkbox]{
 }
 
 .dislike-icon{
-	color:#2C4251;
+	color:#A0EADE;
 	font-size: 50px;
-	display:none;
 	z-index: 3;
 	position: relative;
+	opacity:0.6;
 }
 
 .fav-button-dropdown {
