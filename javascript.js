@@ -47,25 +47,12 @@ function picFavTag(ele) {
 	}
 }
 
-function picDislikeTagHover(ele) {
-	ele.getElementsByClassName("dislike-icon")[0].style.display = "inline-block";
-}
-
-function picDislikeTagLeave(ele) {
-	console.log(ele.getElementsByClassName("dislike-icon")[0].style.opacity);
-	if (ele.getElementsByClassName("dislike-icon")[0].style.opacity == "0.6") {
-		ele.getElementsByClassName("dislike-icon")[0].style.display = "none";
-	}
-}
-
 function picDislikeTag(ele) {
-	if (ele.style.opacity == "0.6"){
-		ele.style.opacity = "1.0";
-		ele.style.display = "inline-block";
+	if (ele.style.opacity == "1"){
+		ele.style.opacity = "0.5";
 	}
 	else {
-		ele.style.opacity = "0.6";
-		ele.style.display = "none";
+		ele.style.opacity = "1";
 	}
 }
 
