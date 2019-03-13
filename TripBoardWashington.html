@@ -1,0 +1,105 @@
+<html>
+<header>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+	<link href="css.css" type="text/css" rel="stylesheet">
+</header>
+<body>
+
+<script src="javascript.js"></script>
+
+<div class="header-bar">
+   
+    <div class="header-logo">
+    	<a href="HomePage2.html" class="header-logo-link">ADVENTUM</a>
+    </div>
+	<div class="header-profile">
+  		<img class="header-profile-pic" src="images/blank-profile.png" onclick="displayProfile(this)">
+    	<div class="header-profile-menu">
+      		<p class="header-profile-menu-name">Vishal Giridhar</p>
+      		<a href="LogIn.html"><p class="header-profile-menu-logOut">Log Out</p></a>
+   		</div>
+  	</div>
+</div>
+
+<hr>
+
+<div class="tripboard-header">
+	<a href="PictureSelector2.html"><button class="tripboard-GoToSelect">< Select More</button></a>
+	<div class="selector-info" style="font-size:35px">Washington DC, US : 3 Days</div>
+	<a href="HomePage2.html"><button class="tripboard-GoToHome">Past Boards ></button></a>
+</div>
+
+<div class="filter">
+  <button class="activeFilter" onclick="filterSelection(this,'all')">Show all</button>
+  <button class="filterButton" onclick="filterSelection(this,'bottoms')">Bottoms</button>
+  <button class="filterButton" onclick="filterSelection(this,'tops')">Tops</button>
+  <button class="filterButton" onclick="filterSelection(this,'shoes')">Shoes</button>
+  <button class="filterButton" onclick="filterSelection(this,'tips')">Tips</button>
+</div>
+
+<div class="imgWrapper" onload="buildBoard(this)">
+	<div class="selector-imgBlock1 filterDiv tips show">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="tipFav(this)">favorite</i>
+		</button>
+		<img src="images/tip1.png" class="selector-img">
+	</div>
+	<div class="selector-imgBlock1 filterDiv dresses show">
+		<img src="images/RomeMan1.jpeg" class="selector-img">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Tops</p>
+		</div>
+	</div>
+	<div class="selector-imgBlock1 filterDiv dresses show">
+		<img src="images/RomeMan2.jpeg" class="selector-img">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Bottom</p>
+			<p class="fav-button-dropdown-tag" onclick="picFavTag(this)">Shoes</p>
+		</div>
+	</div>
+	<div class="selector-imgBlock1 filterDiv tops bottoms show">
+		<img  src="images/RomeMan4.jpeg" class="selector-img">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Top</p>
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Bottom</p>
+			<p class="fav-button-dropdown-tag" onclick="picFavTag(this)">Shoes</p>
+		</div>
+	</div>
+	<div class="selector-imgBlock1 filterDiv shoes show">
+		<img src="images/RomeMan3.jpeg" class="selector-img">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Shoes</p>
+		</div>
+	</div>
+	<div class="selector-imgBlock1 filterDiv shoes show">
+		<img src="images/RomeMan5.jpeg" class="selector-img">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Shoes</p>
+		</div>
+	</div>
+	<div class="selector-imgBlock1 filterDiv shoes show">
+		<img src="images/RomeMan6.jpeg" class="selector-img">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
+		</button>
+		<div class="fav-button-dropdown">
+			<p class="fav-button-dropdown-tag fav-button-dropdown-tag-selected" onclick="picFavTag(this)" style="background-color:rgb(44, 66, 81)">Shoes</p>
+		</div>
+	</div>
+</div>

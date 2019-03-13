@@ -49,9 +49,11 @@ function picFavTag(ele) {
 
 function picDislikeTag(ele) {
 	if (ele.style.opacity == "1"){
-		ele.style.opacity = "0.6";
+		ele.style.color = "#2c4251";
+		ele.style.opacity = "0.4";
 	}
 	else {
+		ele.style.color = "#2c4251";
 		ele.style.opacity = "1";
 	}
 }

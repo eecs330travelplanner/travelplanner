@@ -26,6 +26,7 @@
 
 <div class="tripboard-header">
 	<a href="PictureSelector2.html"><button class="tripboard-GoToSelect">< Select More</button></a>
+	<div class="selector-info">Rome, Italy : 5 Days</div>
 	<a href="HomePage2.html"><button class="tripboard-GoToHome">Past Boards ></button></a>
 </div>
 
@@ -38,8 +39,14 @@
 </div>
 
 <div class="imgWrapper" onload="buildBoard(this)">
+	<div class="selector-imgBlock1 filterDiv tips show">
+		<button class="selector-imgButton fav-button">
+			<i class="material-icons fav-icon" onclick="tipFav(this)">favorite</i>
+		</button>
+		<img src="images/tip1.png" class="selector-img">
+	</div>
 	<div class="selector-imgBlock1 filterDiv dresses show">
-		<img src="images/RomeMan1.jpeg" id="selector2-img1">
+		<img src="images/RomeMan1.jpeg" class="selector-img">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
@@ -48,7 +55,7 @@
 		</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv dresses show">
-		<img src="images/RomeMan2.jpeg" id="selector2-img2">
+		<img src="images/RomeMan2.jpeg" class="selector-img">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
@@ -58,7 +65,7 @@
 		</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv tops bottoms show">
-		<img  src="images/RomeMan4.jpeg" id="selector2-img3">
+		<img  src="images/RomeMan4.jpeg" class="selector-img">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
@@ -68,14 +75,8 @@
 			<p class="fav-button-dropdown-tag" onclick="picFavTag(this)">Shoes</p>
 		</div>
 	</div>
-	<div class="selector-imgBlock1 filterDiv tips show">
-		<button class="selector-imgButton fav-button">
-			<i class="material-icons fav-icon" onclick="tipFav(this)">favorite</i>
-		</button>
-		<div class="selector-tipsText">When visiting the Vatican, remember to always keep your shoulders and knees covered!</div>
-	</div>
-	<div class="selector-imgBlock1 filterDiv shoes show" ">
-		<img src="images/RomeMan3.jpeg" id="selector2-img4">
+	<div class="selector-imgBlock1 filterDiv shoes show">
+		<img src="images/RomeMan3.jpeg" class="selector-img">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
@@ -84,7 +85,7 @@
 		</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv shoes show">
-		<img src="images/RomeMan5.jpeg" id="selector2-img5">
+		<img src="images/RomeMan5.jpeg" class="selector-img">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>
@@ -93,7 +94,7 @@
 		</div>
 	</div>
 	<div class="selector-imgBlock1 filterDiv shoes show">
-		<img src="images/RomeMan6.jpeg" id="selector2-img5">
+		<img src="images/RomeMan6.jpeg" class="selector-img">
 		<button class="selector-imgButton fav-button">
 			<i class="material-icons fav-icon" onclick="picFav(this)">favorite</i>
 		</button>

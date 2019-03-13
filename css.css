@@ -441,7 +441,7 @@ input[type=checkbox]{
 }
 
 .selector-info {
-	float:left;
+	float:center;
 	display:inline-block;
 	width:35%;
 	height:100%;
@@ -508,7 +508,7 @@ input[type=checkbox]{
 }
 
 .dislike-icon{
-	color:#A0EADE;
+	color:#2c4251;
 	font-size: 50px;
 	z-index: 3;
 	position: relative;
@@ -546,28 +546,20 @@ input[type=checkbox]{
 }
 
 #selector-img1 {
-	width:300px;
 }
 #selector-img2 {
-	width:250px;
 }
 #selector-img3 {
-	width:450px;
 }
 #selector-img4 {
-	width:260px;
 }
 #selector-img5 {
-	width:450px;
 }
 #selector-img6 {
-	width:500px;
 }
 #selector-img7 {
-	width:300px;
 }
 #selector-img8 {
-	width:420px;
 }
 
 
@@ -639,6 +631,7 @@ input[type=checkbox]{
 	font-family: "Raleway";
 }
 .filterButton{
+	margin-top:40px;
 	text-align:center;
 	font-size:15px;
 	width: 7%;
@@ -680,7 +673,7 @@ text-align:center;
 	background-color: white;
 }
 
-.selector-tipsText {
+#selector-tipsText {
 	width: 350px;
 	height: 350px;
 	background-color: white;
