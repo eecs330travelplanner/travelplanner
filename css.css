@@ -441,7 +441,7 @@ input[type=checkbox]{
 }
 
 .selector-info {
-	float:left;
+	float:center;
 	display:inline-block;
 	width:35%;
 	height:100%;
@@ -508,11 +508,11 @@ input[type=checkbox]{
 }
 
 .dislike-icon{
-	color:#2C4251;
+	color:#2c4251;
 	font-size: 50px;
-	display:none;
 	z-index: 3;
 	position: relative;
+	opacity:0.6;
 }
 
 .fav-button-dropdown {
@@ -546,28 +546,20 @@ input[type=checkbox]{
 }
 
 #selector-img1 {
-	width:300px;
 }
 #selector-img2 {
-	width:250px;
 }
 #selector-img3 {
-	width:450px;
 }
 #selector-img4 {
-	width:260px;
 }
 #selector-img5 {
-	width:450px;
 }
 #selector-img6 {
-	width:500px;
 }
 #selector-img7 {
-	width:300px;
 }
 #selector-img8 {
-	width:420px;
 }
 
 
@@ -595,6 +587,11 @@ input[type=checkbox]{
 }
 #selector2-img8 {
 	width:420px;
+}
+
+.selector-img{
+	width:350px;
+	height:350px;
 }
 
 /*
@@ -634,6 +631,7 @@ input[type=checkbox]{
 	font-family: "Raleway";
 }
 .filterButton{
+	margin-top:40px;
 	text-align:center;
 	font-size:15px;
 	width: 7%;
@@ -667,24 +665,17 @@ text-align:center;
 
 .tips {
 	position: relative;
-	width:60%;
-	margin-left:20%;
-	margin-right:20%;
-	border:5px solid #2C4251;
-	font-size:30px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	/*border:5px solid #2C4251;*/
+	font-size:27px;
+	background-color: white;
 }
 
-.selector-tipsText {
-	margin:10px;
-	margin-left:70px;
-	margin-right:70px;
-}
-
-.tips {
-	position: relative;
-	width:60%;
-	margin-left:20%;
-	margin-right:20%;
-	border:5px solid #2C4251;
-	font-size:30px;
+#selector-tipsText {
+	width: 350px;
+	height: 350px;
+	background-color: white;
+	text-align:center;
 }
