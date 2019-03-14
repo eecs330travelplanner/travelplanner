@@ -65,6 +65,9 @@ function picDislikeTag(ele) {
 	}
 }
 
+function updateDate(ele) {
+	document.getElementsByClassName("text-input")[1].min = ele.value;
+}
 
 function buildBoard(wrap) {
 	var stored = JSON.parse(sessionStorage.getItem("favPics"));
