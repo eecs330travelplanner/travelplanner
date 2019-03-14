@@ -47,6 +47,15 @@ function picFavTag(ele) {
 	}
 }
 
+function tipFavTag(ele) {
+	if (ele.innerHTML == "favorite") {
+		ele.innerHTML = "favorite_border";
+	}
+	else {
+		ele.innerHTML = "favorite";
+	}
+}
+
 function picDislikeTag(ele) {
 	if (ele.style.opacity == "1"){
 		ele.style.opacity = "0.4";
